@@ -1,0 +1,1097 @@
+{
+  "meta": {
+    "name": "调料库",
+    "version": "1.0.0",
+    "desc": "调料同样按每 100g 计营养；spoon 为 1 平勺（约 15ml）对应的克数，用于克/勺切换。isPantry 表示常备调料，默认进入调料库存。",
+    "updated": "2026-10-30"
+  },
+  "items": [
+    {
+      "id": "oil",
+      "name": "食用油",
+      "alias": [
+        "花生油",
+        "菜籽油",
+        "玉米油"
+      ],
+      "cat": "oil",
+      "per100": {
+        "kcal": 899,
+        "p": 0,
+        "f": 99.9,
+        "c": 0
+      },
+      "spoon": 12,
+      "shelf": 240,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "sesame_oil",
+      "name": "香油",
+      "alias": [
+        "芝麻油"
+      ],
+      "cat": "oil",
+      "per100": {
+        "kcal": 898,
+        "p": 0,
+        "f": 99.7,
+        "c": 0.2
+      },
+      "spoon": 10,
+      "shelf": 240,
+      "isPantry": true,
+      "avoid": [
+        "sesame"
+      ]
+    },
+    {
+      "id": "salt",
+      "name": "盐",
+      "alias": [
+        "食盐"
+      ],
+      "cat": "basic",
+      "per100": {
+        "kcal": 0,
+        "p": 0,
+        "f": 0,
+        "c": 0
+      },
+      "spoon": 9,
+      "shelf": 720,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "sugar",
+      "name": "白砂糖",
+      "alias": [
+        "糖"
+      ],
+      "cat": "basic",
+      "per100": {
+        "kcal": 400,
+        "p": 0,
+        "f": 0,
+        "c": 99.9
+      },
+      "spoon": 13,
+      "shelf": 720,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "rock_sugar",
+      "name": "冰糖",
+      "alias": [],
+      "cat": "basic",
+      "per100": {
+        "kcal": 397,
+        "p": 0,
+        "f": 0,
+        "c": 99.3
+      },
+      "spoon": 12,
+      "shelf": 720,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "light_soy",
+      "name": "生抽",
+      "alias": [
+        "酱油"
+      ],
+      "cat": "soy_sauce",
+      "per100": {
+        "kcal": 63,
+        "p": 5.6,
+        "f": 0.1,
+        "c": 10.1
+      },
+      "spoon": 15,
+      "shelf": 365,
+      "isPantry": true,
+      "avoid": [
+        "gluten",
+        "soy"
+      ]
+    },
+    {
+      "id": "dark_soy",
+      "name": "老抽",
+      "alias": [],
+      "cat": "soy_sauce",
+      "per100": {
+        "kcal": 129,
+        "p": 8.9,
+        "f": 0.2,
+        "c": 24.8
+      },
+      "spoon": 15,
+      "shelf": 365,
+      "isPantry": true,
+      "avoid": [
+        "gluten",
+        "soy"
+      ]
+    },
+    {
+      "id": "oyster_sauce",
+      "name": "蚝油",
+      "alias": [],
+      "cat": "sauce",
+      "per100": {
+        "kcal": 114,
+        "p": 5.1,
+        "f": 0.3,
+        "c": 22.3
+      },
+      "spoon": 16,
+      "shelf": 240,
+      "isPantry": true,
+      "avoid": [
+        "seafood",
+        "gluten"
+      ]
+    },
+    {
+      "id": "cooking_wine",
+      "name": "料酒",
+      "alias": [
+        "黄酒"
+      ],
+      "cat": "wine",
+      "per100": {
+        "kcal": 66,
+        "p": 0.4,
+        "f": 0,
+        "c": 5.5
+      },
+      "spoon": 15,
+      "shelf": 365,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "vinegar",
+      "name": "香醋",
+      "alias": [
+        "陈醋",
+        "米醋"
+      ],
+      "cat": "vinegar",
+      "per100": {
+        "kcal": 41,
+        "p": 0.9,
+        "f": 0.1,
+        "c": 8.3
+      },
+      "spoon": 15,
+      "shelf": 365,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "white_vinegar",
+      "name": "白醋",
+      "alias": [],
+      "cat": "vinegar",
+      "per100": {
+        "kcal": 20,
+        "p": 0,
+        "f": 0,
+        "c": 5
+      },
+      "spoon": 15,
+      "shelf": 365,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "doubanjiang",
+      "name": "郫县豆瓣酱",
+      "alias": [
+        "豆瓣酱"
+      ],
+      "cat": "paste",
+      "per100": {
+        "kcal": 178,
+        "p": 13.6,
+        "f": 6.8,
+        "c": 17.1
+      },
+      "spoon": 18,
+      "shelf": 240,
+      "isPantry": true,
+      "avoid": [
+        "spicy",
+        "soy",
+        "gluten"
+      ]
+    },
+    {
+      "id": "sweet_bean_sauce",
+      "name": "甜面酱",
+      "alias": [],
+      "cat": "paste",
+      "per100": {
+        "kcal": 136,
+        "p": 5.5,
+        "f": 0.6,
+        "c": 28.5
+      },
+      "spoon": 18,
+      "shelf": 180,
+      "isPantry": true,
+      "avoid": [
+        "gluten",
+        "soy"
+      ]
+    },
+    {
+      "id": "soybean_paste",
+      "name": "黄豆酱",
+      "alias": [],
+      "cat": "paste",
+      "per100": {
+        "kcal": 130,
+        "p": 12,
+        "f": 1.2,
+        "c": 17
+      },
+      "spoon": 18,
+      "shelf": 180,
+      "isPantry": true,
+      "avoid": [
+        "soy",
+        "gluten"
+      ]
+    },
+    {
+      "id": "ketchup",
+      "name": "番茄沙司",
+      "alias": [
+        "番茄酱"
+      ],
+      "cat": "sauce",
+      "per100": {
+        "kcal": 81,
+        "p": 1.2,
+        "f": 0.2,
+        "c": 18.6
+      },
+      "spoon": 15,
+      "shelf": 180,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "starch",
+      "name": "玉米淀粉",
+      "alias": [
+        "淀粉",
+        "生粉"
+      ],
+      "cat": "powder",
+      "per100": {
+        "kcal": 346,
+        "p": 0.3,
+        "f": 0,
+        "c": 85.8
+      },
+      "spoon": 9,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "white_pepper",
+      "name": "白胡椒粉",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 357,
+        "p": 11,
+        "f": 3,
+        "c": 68
+      },
+      "spoon": 5,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "black_pepper",
+      "name": "黑胡椒",
+      "alias": [
+        "黑胡椒碎"
+      ],
+      "cat": "spice",
+      "per100": {
+        "kcal": 251,
+        "p": 10.4,
+        "f": 3.3,
+        "c": 64
+      },
+      "spoon": 5,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "sichuan_pepper",
+      "name": "花椒",
+      "alias": [
+        "青花椒"
+      ],
+      "cat": "spice",
+      "per100": {
+        "kcal": 258,
+        "p": 6.7,
+        "f": 8.9,
+        "c": 66.5
+      },
+      "spoon": 4,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "five_spice",
+      "name": "五香粉",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 348,
+        "p": 9.5,
+        "f": 6.5,
+        "c": 66
+      },
+      "spoon": 4,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "cumin",
+      "name": "孜然粉",
+      "alias": [
+        "孜然"
+      ],
+      "cat": "spice",
+      "per100": {
+        "kcal": 375,
+        "p": 17.8,
+        "f": 22.3,
+        "c": 44
+      },
+      "spoon": 4,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "chili_powder",
+      "name": "辣椒粉",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 318,
+        "p": 12,
+        "f": 17,
+        "c": 56
+      },
+      "spoon": 4,
+      "shelf": 240,
+      "isPantry": true,
+      "avoid": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "dried_chili",
+      "name": "干辣椒",
+      "alias": [
+        "干红椒"
+      ],
+      "cat": "spice",
+      "per100": {
+        "kcal": 298,
+        "p": 15.4,
+        "f": 12.2,
+        "c": 57
+      },
+      "spoon": 3,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "star_anise",
+      "name": "八角",
+      "alias": [
+        "大料"
+      ],
+      "cat": "spice",
+      "per100": {
+        "kcal": 337,
+        "p": 17.6,
+        "f": 15.9,
+        "c": 50
+      },
+      "spoon": 3,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "cinnamon",
+      "name": "桂皮",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 199,
+        "p": 5,
+        "f": 2.2,
+        "c": 60
+      },
+      "spoon": 3,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "bay_leaf",
+      "name": "香叶",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 313,
+        "p": 7.6,
+        "f": 8.4,
+        "c": 66
+      },
+      "spoon": 2,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "chicken_essence",
+      "name": "鸡精",
+      "alias": [
+        "味精"
+      ],
+      "cat": "basic",
+      "per100": {
+        "kcal": 195,
+        "p": 11,
+        "f": 1,
+        "c": 34
+      },
+      "spoon": 8,
+      "shelf": 365,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "steamed_fish_soy",
+      "name": "蒸鱼豉油",
+      "alias": [],
+      "cat": "soy_sauce",
+      "per100": {
+        "kcal": 70,
+        "p": 6,
+        "f": 0.1,
+        "c": 11
+      },
+      "spoon": 15,
+      "shelf": 365,
+      "isPantry": true,
+      "avoid": [
+        "gluten",
+        "soy"
+      ]
+    },
+    {
+      "id": "pickled_pepper",
+      "name": "泡椒",
+      "alias": [
+        "野山椒"
+      ],
+      "cat": "paste",
+      "per100": {
+        "kcal": 32,
+        "p": 1.5,
+        "f": 0.4,
+        "c": 6
+      },
+      "spoon": 15,
+      "shelf": 180,
+      "isPantry": false,
+      "avoid": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "chopped_chili",
+      "name": "剁椒",
+      "alias": [],
+      "cat": "paste",
+      "per100": {
+        "kcal": 41,
+        "p": 1.8,
+        "f": 0.5,
+        "c": 8
+      },
+      "spoon": 18,
+      "shelf": 180,
+      "isPantry": false,
+      "avoid": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "douchi",
+      "name": "豆豉",
+      "alias": [
+        "阳江豆豉"
+      ],
+      "cat": "paste",
+      "per100": {
+        "kcal": 259,
+        "p": 24.1,
+        "f": 3.2,
+        "c": 39
+      },
+      "spoon": 10,
+      "shelf": 300,
+      "isPantry": true,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "fermented_tofu",
+      "name": "腐乳",
+      "alias": [
+        "豆腐乳"
+      ],
+      "cat": "paste",
+      "per100": {
+        "kcal": 133,
+        "p": 10.9,
+        "f": 8.2,
+        "c": 4.8
+      },
+      "spoon": 12,
+      "shelf": 240,
+      "isPantry": true,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "sesame_paste",
+      "name": "芝麻酱",
+      "alias": [
+        "麻酱"
+      ],
+      "cat": "sauce",
+      "per100": {
+        "kcal": 618,
+        "p": 19.2,
+        "f": 52.7,
+        "c": 16.8
+      },
+      "spoon": 15,
+      "shelf": 180,
+      "isPantry": true,
+      "avoid": [
+        "sesame"
+      ]
+    },
+    {
+      "id": "curry_cube",
+      "name": "咖喱块",
+      "alias": [
+        "咖喱"
+      ],
+      "cat": "sauce",
+      "per100": {
+        "kcal": 500,
+        "p": 6,
+        "f": 34,
+        "c": 42
+      },
+      "spoon": 12,
+      "shelf": 240,
+      "isPantry": false,
+      "avoid": [
+        "dairy",
+        "gluten"
+      ]
+    },
+    {
+      "id": "honey",
+      "name": "蜂蜜",
+      "alias": [],
+      "cat": "basic",
+      "per100": {
+        "kcal": 321,
+        "p": 0.4,
+        "f": 1.9,
+        "c": 75.6
+      },
+      "spoon": 21,
+      "shelf": 540,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "hotpot_base",
+      "name": "火锅底料",
+      "alias": [
+        "牛油底料"
+      ],
+      "cat": "paste",
+      "per100": {
+        "kcal": 620,
+        "p": 6,
+        "f": 62,
+        "c": 9
+      },
+      "spoon": 20,
+      "shelf": 240,
+      "isPantry": false,
+      "avoid": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "yeast",
+      "name": "酵母",
+      "alias": [],
+      "cat": "powder",
+      "per100": {
+        "kcal": 105,
+        "p": 47,
+        "f": 1.5,
+        "c": 14
+      },
+      "spoon": 6,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "olive_oil",
+      "name": "橄榄油",
+      "alias": [],
+      "cat": "oil",
+      "per100": {
+        "kcal": 884,
+        "p": 0.0,
+        "f": 100.0,
+        "c": 0.0
+      },
+      "spoon": 14,
+      "shelf": 365,
+      "isPantry": true,
+      "avoid": []
+    },
+    {
+      "id": "turmeric",
+      "name": "姜黄粉",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 312,
+        "p": 9.7,
+        "f": 3.3,
+        "c": 67.1
+      },
+      "spoon": 4,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "cinnamon_powder",
+      "name": "肉桂粉",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 247,
+        "p": 4.0,
+        "f": 1.2,
+        "c": 80.6
+      },
+      "spoon": 4,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "erythritol",
+      "name": "代糖",
+      "alias": [
+        "赤藓糖醇"
+      ],
+      "cat": "basic",
+      "per100": {
+        "kcal": 0,
+        "p": 0.0,
+        "f": 0.0,
+        "c": 0.0
+      },
+      "spoon": 10,
+      "shelf": 720,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "miso",
+      "name": "味噌",
+      "alias": [
+        "白味噌"
+      ],
+      "cat": "paste",
+      "per100": {
+        "kcal": 199,
+        "p": 12.8,
+        "f": 6.0,
+        "c": 26.5
+      },
+      "spoon": 18,
+      "shelf": 240,
+      "isPantry": false,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "cocoa",
+      "name": "无糖可可粉",
+      "alias": [],
+      "cat": "powder",
+      "per100": {
+        "kcal": 228,
+        "p": 19.6,
+        "f": 13.7,
+        "c": 57.9
+      },
+      "spoon": 5,
+      "shelf": 365,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "mustard",
+      "name": "黄芥末酱",
+      "alias": [],
+      "cat": "sauce",
+      "per100": {
+        "kcal": 66,
+        "p": 4.0,
+        "f": 3.3,
+        "c": 5.8
+      },
+      "spoon": 15,
+      "shelf": 240,
+      "isPantry": false,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "apple_cider",
+      "name": "苹果醋",
+      "alias": [],
+      "cat": "vinegar",
+      "per100": {
+        "kcal": 22,
+        "p": 0.0,
+        "f": 0.0,
+        "c": 0.9
+      },
+      "spoon": 15,
+      "shelf": 365,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "coconut_oil",
+      "name": "椰子油",
+      "alias": [],
+      "cat": "oil",
+      "per100": {
+        "kcal": 862,
+        "p": 0.0,
+        "f": 100.0,
+        "c": 0.0
+      },
+      "spoon": 14,
+      "shelf": 365,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "chili_oil",
+      "name": "辣椒油",
+      "alias": [],
+      "cat": "oil",
+      "per100": {
+        "kcal": 900,
+        "p": 1.0,
+        "f": 99.0,
+        "c": 1.0
+      },
+      "spoon": 12,
+      "shelf": 240,
+      "isPantry": false,
+      "avoid": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "tomato_paste",
+      "name": "番茄膏",
+      "alias": [],
+      "cat": "sauce",
+      "per100": {
+        "kcal": 82,
+        "p": 4.3,
+        "f": 0.5,
+        "c": 18.9
+      },
+      "spoon": 16,
+      "shelf": 240,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "curry_powder",
+      "name": "咖喱粉",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 325,
+        "p": 12.7,
+        "f": 13.9,
+        "c": 55.8
+      },
+      "spoon": 4,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "oregano",
+      "name": "牛至",
+      "alias": [
+        "披萨草"
+      ],
+      "cat": "spice",
+      "per100": {
+        "kcal": 265,
+        "p": 9.0,
+        "f": 4.3,
+        "c": 68.9
+      },
+      "spoon": 3,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "rosemary",
+      "name": "迷迭香",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 131,
+        "p": 3.3,
+        "f": 5.9,
+        "c": 20.7
+      },
+      "spoon": 3,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "thyme",
+      "name": "百里香",
+      "alias": [],
+      "cat": "spice",
+      "per100": {
+        "kcal": 101,
+        "p": 5.6,
+        "f": 1.7,
+        "c": 24.5
+      },
+      "spoon": 3,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "balsamic",
+      "name": "黑醋",
+      "alias": [],
+      "cat": "vinegar",
+      "per100": {
+        "kcal": 88,
+        "p": 0.5,
+        "f": 0.0,
+        "c": 17.0
+      },
+      "spoon": 15,
+      "shelf": 365,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "gochujang",
+      "name": "韩式辣酱",
+      "alias": [],
+      "cat": "paste",
+      "per100": {
+        "kcal": 219,
+        "p": 5.0,
+        "f": 3.0,
+        "c": 43.0
+      },
+      "spoon": 18,
+      "shelf": 240,
+      "isPantry": false,
+      "avoid": [
+        "spicy",
+        "soy"
+      ]
+    },
+    {
+      "id": "baking_powder",
+      "name": "泡打粉",
+      "alias": [],
+      "cat": "powder",
+      "per100": {
+        "kcal": 53,
+        "p": 0.0,
+        "f": 0.0,
+        "c": 27.7
+      },
+      "spoon": 4,
+      "shelf": 365,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "maple_syrup",
+      "name": "枫糖浆",
+      "alias": [],
+      "cat": "basic",
+      "per100": {
+        "kcal": 260,
+        "p": 0.0,
+        "f": 0.1,
+        "c": 67.0
+      },
+      "spoon": 20,
+      "shelf": 365,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "vanilla",
+      "name": "香草精",
+      "alias": [],
+      "cat": "powder",
+      "per100": {
+        "kcal": 288,
+        "p": 0.1,
+        "f": 0.1,
+        "c": 12.7
+      },
+      "spoon": 5,
+      "shelf": 720,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "yeast_nutritional",
+      "name": "营养酵母",
+      "alias": [],
+      "cat": "powder",
+      "per100": {
+        "kcal": 385,
+        "p": 45.0,
+        "f": 5.0,
+        "c": 36.0
+      },
+      "spoon": 5,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "braising_pack",
+      "name": "卤料包",
+      "alias": [
+        "卤料"
+      ],
+      "cat": "spice",
+      "per100": {
+        "kcal": 250,
+        "p": 8.0,
+        "f": 5.0,
+        "c": 40.0
+      },
+      "spoon": 8,
+      "shelf": 300,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "sichuan_pepper_oil",
+      "name": "花椒油",
+      "alias": [],
+      "cat": "oil",
+      "per100": {
+        "kcal": 884,
+        "p": 0.0,
+        "f": 100.0,
+        "c": 0.0
+      },
+      "spoon": 12,
+      "shelf": 365,
+      "isPantry": false,
+      "avoid": []
+    },
+    {
+      "id": "zhajiang",
+      "name": "炸酱",
+      "alias": [],
+      "cat": "paste",
+      "per100": {
+        "kcal": 180,
+        "p": 10.0,
+        "f": 8.0,
+        "c": 18.0
+      },
+      "spoon": 18,
+      "shelf": 180,
+      "isPantry": false,
+      "avoid": [
+        "soy",
+        "gluten"
+      ]
+    }
+  ]
+}

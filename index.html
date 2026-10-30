@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>家常菜谱 · 智能厨房｜离线营养配餐助手</title>
+<meta name="description" content="纯静态的家庭菜谱与食材管理工具：库存临期提醒、食材双匹配、营养自动计算、随机抽菜、三餐规划，全部离线运行。">
+<meta name="theme-color" content="#f2751b">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/logo.svg">
+
+<!-- 全部样式本地打包：Tailwind 工具类 + 本地 FontAwesome + 自定义设计层 -->
+<link rel="stylesheet" href="assets/css/tailwind.min.css">
+<link rel="stylesheet" href="assets/fa/css/all.min.css">
+<link rel="stylesheet" href="assets/css/app.css">
+
+<!-- 首屏前恢复主题，避免闪烁 -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('sr-theme');
+      if (!t || t === 'auto') {
+        t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { /* 隐私模式下忽略 */ }
+  })();
+</script>
+</head>
+<body>
+<div class="app-shell">
+
+  <!-- ==================== 顶部导航 ==================== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#today" data-nav="today" aria-label="回到首页">
+        <img src="assets/img/logo.svg" alt="" width="38" height="38">
+        <div>
+          <div class="brand-name">家常菜谱</div>
+          <div class="brand-sub">离线版</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="主导航">
+        <button class="nav-link" data-nav="today"><i class="fa-solid fa-house"></i>今天</button>
+        <button class="nav-link" data-nav="recipes"><i class="fa-solid fa-book-open"></i>菜谱</button>
+        <button class="nav-link" data-nav="me"><i class="fa-solid fa-user"></i>我的</button>
+      </nav>
+
+      <div class="nav-right">
+        <button class="icon-btn" id="themeBtn" title="切换亮色 / 暗色" aria-label="切换主题">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="icon-btn hamburger" id="menuBtn" aria-label="展开菜单" aria-expanded="false">
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 移动端折叠菜单 -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="nav-link" data-nav="today"><i class="fa-solid fa-house"></i>今天</button>
+    <button class="nav-link" data-nav="recipes"><i class="fa-solid fa-book-open"></i>菜谱</button>
+    <button class="nav-link" data-nav="me"><i class="fa-solid fa-user"></i>我的</button>
+    <button class="nav-link" data-nav="draw"><i class="fa-solid fa-shuffle"></i>随机抽菜</button>
+    <button class="nav-link" data-nav="plan"><i class="fa-solid fa-calendar-days"></i>三餐安排</button>
+  </div>
+
+  <main>
+    <!-- 首页：今天吃什么（默认视图） -->
+    <section id="view-today" class="view active" aria-label="今天"><div id="todayRoot">
+      <div style="padding:56px 0;text-align:center">
+        <div class="empty-ico" style="margin:0 auto 18px"><i class="fa-solid fa-bowl-food"></i></div>
+        <h3 style="font-size:17px;margin-bottom:6px">正在准备…</h3>
+        <p class="t-mute" style="font-size:13px;margin:0">读取菜谱数据</p>
+        <div class="skeleton" style="height:14px;width:200px;margin:22px auto 10px"></div>
+      </div>
+    </div></section>
+
+    <section id="view-recipes" class="view" aria-label="菜谱"><div id="recipesRoot"></div></section>
+    <section id="view-me" class="view" aria-label="我的"><div id="meRoot"></div></section>
+
+    <!-- 二级页：从首页进入 -->
+    <section id="view-draw" class="view" aria-label="随机抽菜"><div id="drawRoot"></div></section>
+    <section id="view-plan" class="view" aria-label="三餐安排"><div id="planRoot"></div></section>
+
+    <!-- 二级页：从「我的」进入（复用原视图模块） -->
+    <section id="view-stock" class="view" aria-label="冰箱库存"><div id="stockRoot"></div></section>
+    <section id="view-fav" class="view" aria-label="我的收藏"><div id="favRoot"></div></section>
+    <section id="view-mine" class="view" aria-label="我写的菜谱"><div id="mineRoot"></div></section>
+    <section id="view-settings" class="view" aria-label="设置"><div id="settingsRoot"></div></section>
+  </main>
+</div>
+
+<!-- 弹窗与轻提示挂载点 -->
+<div id="modalRoot"></div>
+<div class="toast-host" id="toastHost" aria-live="polite"></div>
+
+<!-- 数据层：优先 fetch data/*.json；只有 fetch 不可用时才动态加载 data/embedded.js（省掉首屏 87KB） -->
+<!-- file:// 直接双击时，ES Module 会被浏览器的 CORS 策略拦截，这里给一个明确提示 -->
+<script>
+  (function () {
+    if (location.protocol !== 'file:') return;
+    window.addEventListener('DOMContentLoaded', function () {
+      var root = document.getElementById('todayRoot');
+      if (!root) return;
+      root.innerHTML =
+        '<div class="empty" style="margin-top:32px">' +
+          '<div class="empty-ico"><i class="fa-solid fa-triangle-exclamation"></i></div>' +
+          '<h4>需要用本地服务器打开</h4>' +
+          '<p>浏览器出于安全策略，不允许 <code>file://</code> 页面加载 ES Module。' +
+          '在项目目录里执行下面任意一条命令，然后用 http://localhost:8080 访问即可：</p>' +
+          '<pre style="margin:0;padding:12px 16px;border-radius:12px;background:var(--elev-2);font-size:13px;text-align:left">' +
+          'python -m http.server 8080\nnpx serve .</pre>' +
+          '<p style="font-size:12px">部署到 GitHub Pages 后不会有这个问题。</p>' +
+        '</div>';
+    });
+  })();
+</script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

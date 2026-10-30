@@ -1,0 +1,4221 @@
+{
+  "meta": {
+    "name": "食材库",
+    "version": "1.0.0",
+    "desc": "每 100g 可食部营养值（kcal / 蛋白质 / 脂肪 / 碳水，单位克）。shelf 为常温或冷藏参考保质天数，spoon 为 1 平勺约等于多少克（null 表示不按勺计量）。",
+    "updated": "2026-10-30"
+  },
+  "items": [
+    {
+      "id": "pork_belly",
+      "name": "五花肉",
+      "alias": [
+        "猪五花",
+        "三层肉"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 395,
+        "p": 13.2,
+        "f": 37,
+        "c": 2.4
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_lean",
+      "name": "猪里脊",
+      "alias": [
+        "里脊肉",
+        "瘦肉"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 155,
+        "p": 20.2,
+        "f": 7.9,
+        "c": 0.7
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_mince",
+      "name": "猪肉末",
+      "alias": [
+        "肉馅",
+        "绞肉"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 240,
+        "p": 17,
+        "f": 19,
+        "c": 1
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_ribs",
+      "name": "排骨",
+      "alias": [
+        "肋排",
+        "小排"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 278,
+        "p": 16.7,
+        "f": 23.1,
+        "c": 0.7
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_trotter",
+      "name": "猪蹄",
+      "alias": [
+        "猪脚"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 260,
+        "p": 22.6,
+        "f": 18.8,
+        "c": 0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_liver",
+      "name": "猪肝",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 129,
+        "p": 19.3,
+        "f": 3.5,
+        "c": 5
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "sausage",
+      "name": "广式香肠",
+      "alias": [
+        "腊肠"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 508,
+        "p": 24,
+        "f": 43,
+        "c": 11
+      },
+      "spoon": null,
+      "shelf": 120,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "bacon",
+      "name": "培根",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 340,
+        "p": 17,
+        "f": 30,
+        "c": 1.5
+      },
+      "spoon": null,
+      "shelf": 30,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "ham_sausage",
+      "name": "火腿肠",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 212,
+        "p": 12,
+        "f": 16,
+        "c": 6
+      },
+      "spoon": null,
+      "shelf": 90,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "beef_brisket",
+      "name": "牛腩",
+      "alias": [
+        "牛肋条"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 332,
+        "p": 17.1,
+        "f": 29.3,
+        "c": 0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "beef"
+      ]
+    },
+    {
+      "id": "beef_tenderloin",
+      "name": "牛里脊",
+      "alias": [
+        "牛柳"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 122,
+        "p": 22,
+        "f": 3.1,
+        "c": 0.9
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "beef"
+      ]
+    },
+    {
+      "id": "beef_mince",
+      "name": "牛肉末",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 190,
+        "p": 18,
+        "f": 13,
+        "c": 0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "beef"
+      ]
+    },
+    {
+      "id": "beef_shank",
+      "name": "牛腱子",
+      "alias": [
+        "牛腱"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 190,
+        "p": 20,
+        "f": 12,
+        "c": 1
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "beef"
+      ]
+    },
+    {
+      "id": "lamb_leg",
+      "name": "羊腿肉",
+      "alias": [
+        "羊肉"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 203,
+        "p": 19,
+        "f": 14,
+        "c": 0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "lamb"
+      ]
+    },
+    {
+      "id": "chicken_whole",
+      "name": "三黄鸡",
+      "alias": [
+        "整鸡",
+        "童子鸡"
+      ],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 167,
+        "p": 19.3,
+        "f": 9.4,
+        "c": 1.3
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "chicken_leg",
+      "name": "鸡腿",
+      "alias": [
+        "琵琶腿"
+      ],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 181,
+        "p": 16,
+        "f": 13,
+        "c": 0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "chicken_wing",
+      "name": "鸡翅中",
+      "alias": [
+        "鸡中翅"
+      ],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 194,
+        "p": 17.4,
+        "f": 11.8,
+        "c": 4.6
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "chicken_breast",
+      "name": "鸡胸肉",
+      "alias": [
+        "鸡脯肉"
+      ],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 133,
+        "p": 19.4,
+        "f": 5,
+        "c": 2.5
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "chicken_feet",
+      "name": "鸡爪",
+      "alias": [
+        "凤爪"
+      ],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 254,
+        "p": 23.9,
+        "f": 16.4,
+        "c": 2.7
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "duck",
+      "name": "鸭肉",
+      "alias": [
+        "鸭子"
+      ],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 240,
+        "p": 15.5,
+        "f": 19.7,
+        "c": 0.2
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "egg",
+      "name": "鸡蛋",
+      "alias": [
+        "土鸡蛋"
+      ],
+      "cat": "egg",
+      "per100": {
+        "kcal": 144,
+        "p": 13.3,
+        "f": 8.8,
+        "c": 2.8
+      },
+      "spoon": null,
+      "shelf": 30,
+      "avoid": [
+        "egg"
+      ]
+    },
+    {
+      "id": "century_egg",
+      "name": "皮蛋",
+      "alias": [
+        "松花蛋"
+      ],
+      "cat": "egg",
+      "per100": {
+        "kcal": 171,
+        "p": 14.2,
+        "f": 10.7,
+        "c": 4.5
+      },
+      "spoon": null,
+      "shelf": 60,
+      "avoid": [
+        "egg"
+      ]
+    },
+    {
+      "id": "salted_duck_egg",
+      "name": "咸鸭蛋",
+      "alias": [],
+      "cat": "egg",
+      "per100": {
+        "kcal": 190,
+        "p": 12.7,
+        "f": 12.7,
+        "c": 6.3
+      },
+      "spoon": null,
+      "shelf": 90,
+      "avoid": [
+        "egg"
+      ]
+    },
+    {
+      "id": "grass_carp",
+      "name": "草鱼",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 113,
+        "p": 16.6,
+        "f": 5.2,
+        "c": 0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "bass",
+      "name": "鲈鱼",
+      "alias": [
+        "海鲈鱼"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 105,
+        "p": 18.6,
+        "f": 3.4,
+        "c": 0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "crucian",
+      "name": "鲫鱼",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 108,
+        "p": 17.1,
+        "f": 2.7,
+        "c": 3.8
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "hairtail",
+      "name": "带鱼",
+      "alias": [
+        "刀鱼"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 127,
+        "p": 17.7,
+        "f": 4.9,
+        "c": 3.1
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "shrimp",
+      "name": "虾仁",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 93,
+        "p": 18.6,
+        "f": 0.8,
+        "c": 2.8
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "prawn",
+      "name": "基围虾",
+      "alias": [
+        "鲜虾",
+        "大虾"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 101,
+        "p": 18.2,
+        "f": 1.4,
+        "c": 3.9
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "squid",
+      "name": "鱿鱼",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 75,
+        "p": 17,
+        "f": 0.8,
+        "c": 0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "clam",
+      "name": "花蛤",
+      "alias": [
+        "蛤蜊"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 62,
+        "p": 10.1,
+        "f": 1.1,
+        "c": 2.8
+      },
+      "spoon": null,
+      "shelf": 1,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "dried_shrimp",
+      "name": "虾皮",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 200,
+        "p": 30.7,
+        "f": 2.2,
+        "c": 0
+      },
+      "spoon": 5,
+      "shelf": 180,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "kelp",
+      "name": "海带丝",
+      "alias": [
+        "海带"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 13,
+        "p": 1.2,
+        "f": 0.1,
+        "c": 2.1
+      },
+      "spoon": null,
+      "shelf": 7,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "laver",
+      "name": "紫菜",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 250,
+        "p": 26.7,
+        "f": 1.1,
+        "c": 44.1
+      },
+      "spoon": 3,
+      "shelf": 300,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "tofu_firm",
+      "name": "北豆腐",
+      "alias": [
+        "老豆腐"
+      ],
+      "cat": "soy",
+      "per100": {
+        "kcal": 98,
+        "p": 12.2,
+        "f": 4.8,
+        "c": 1.5
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "tofu_silken",
+      "name": "嫩豆腐",
+      "alias": [
+        "南豆腐",
+        "内酯豆腐"
+      ],
+      "cat": "soy",
+      "per100": {
+        "kcal": 57,
+        "p": 6.2,
+        "f": 2.5,
+        "c": 2.4
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "dried_tofu",
+      "name": "豆干",
+      "alias": [
+        "香干"
+      ],
+      "cat": "soy",
+      "per100": {
+        "kcal": 140,
+        "p": 16.2,
+        "f": 3.6,
+        "c": 11.5
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "tofu_skin",
+      "name": "千张",
+      "alias": [
+        "豆腐皮",
+        "百叶"
+      ],
+      "cat": "soy",
+      "per100": {
+        "kcal": 262,
+        "p": 24.5,
+        "f": 16,
+        "c": 5.5
+      },
+      "spoon": null,
+      "shelf": 4,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "yuba",
+      "name": "腐竹",
+      "alias": [],
+      "cat": "soy",
+      "per100": {
+        "kcal": 459,
+        "p": 44.6,
+        "f": 21.7,
+        "c": 22.3
+      },
+      "spoon": null,
+      "shelf": 240,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "soybean",
+      "name": "黄豆",
+      "alias": [
+        "大豆"
+      ],
+      "cat": "soy",
+      "per100": {
+        "kcal": 390,
+        "p": 35,
+        "f": 16,
+        "c": 34.2
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "napa",
+      "name": "大白菜",
+      "alias": [
+        "白菜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 17,
+        "p": 1.5,
+        "f": 0.1,
+        "c": 3.2
+      },
+      "spoon": null,
+      "shelf": 10,
+      "avoid": []
+    },
+    {
+      "id": "bokchoy",
+      "name": "小白菜",
+      "alias": [
+        "青菜",
+        "上海青"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 15,
+        "p": 1.5,
+        "f": 0.3,
+        "c": 2.7
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "spinach",
+      "name": "菠菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 24,
+        "p": 2.6,
+        "f": 0.3,
+        "c": 4.5
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "lettuce",
+      "name": "生菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 15,
+        "p": 1.3,
+        "f": 0.3,
+        "c": 2
+      },
+      "spoon": null,
+      "shelf": 4,
+      "avoid": []
+    },
+    {
+      "id": "cabbage",
+      "name": "圆白菜",
+      "alias": [
+        "包菜",
+        "卷心菜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 24,
+        "p": 1.5,
+        "f": 0.2,
+        "c": 4.6
+      },
+      "spoon": null,
+      "shelf": 12,
+      "avoid": []
+    },
+    {
+      "id": "broccoli",
+      "name": "西兰花",
+      "alias": [
+        "绿花菜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 36,
+        "p": 4.1,
+        "f": 0.6,
+        "c": 4.3
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "cauliflower",
+      "name": "菜花",
+      "alias": [
+        "花菜",
+        "有机花菜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 24,
+        "p": 2,
+        "f": 0.2,
+        "c": 4.6
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "tomato",
+      "name": "番茄",
+      "alias": [
+        "西红柿"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 20,
+        "p": 0.9,
+        "f": 0.2,
+        "c": 4
+      },
+      "spoon": null,
+      "shelf": 7,
+      "avoid": []
+    },
+    {
+      "id": "cucumber",
+      "name": "黄瓜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 16,
+        "p": 0.8,
+        "f": 0.2,
+        "c": 2.9
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "eggplant",
+      "name": "茄子",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 23,
+        "p": 1.1,
+        "f": 0.2,
+        "c": 4.9
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "potato",
+      "name": "土豆",
+      "alias": [
+        "马铃薯"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 77,
+        "p": 2,
+        "f": 0.2,
+        "c": 17.2
+      },
+      "spoon": null,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "carrot",
+      "name": "胡萝卜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 39,
+        "p": 1,
+        "f": 0.2,
+        "c": 8.8
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "white_radish",
+      "name": "白萝卜",
+      "alias": [
+        "萝卜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 21,
+        "p": 0.9,
+        "f": 0.1,
+        "c": 5
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "onion",
+      "name": "洋葱",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 40,
+        "p": 1.1,
+        "f": 0.2,
+        "c": 9
+      },
+      "spoon": null,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "scallion",
+      "name": "小葱",
+      "alias": [
+        "香葱"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 30,
+        "p": 1.7,
+        "f": 0.3,
+        "c": 6.5
+      },
+      "spoon": 4,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "ginger",
+      "name": "姜",
+      "alias": [
+        "生姜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 41,
+        "p": 1.3,
+        "f": 0.6,
+        "c": 10.3
+      },
+      "spoon": 5,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "garlic",
+      "name": "蒜",
+      "alias": [
+        "大蒜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 128,
+        "p": 4.5,
+        "f": 0.2,
+        "c": 27.6
+      },
+      "spoon": 5,
+      "shelf": 25,
+      "avoid": []
+    },
+    {
+      "id": "celery",
+      "name": "芹菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 14,
+        "p": 0.8,
+        "f": 0.1,
+        "c": 3.3
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "green_pepper",
+      "name": "青椒",
+      "alias": [
+        "尖椒"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 22,
+        "p": 1,
+        "f": 0.2,
+        "c": 5.4
+      },
+      "spoon": null,
+      "shelf": 8,
+      "avoid": []
+    },
+    {
+      "id": "red_pepper",
+      "name": "红椒",
+      "alias": [
+        "彩椒"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 28,
+        "p": 1,
+        "f": 0.2,
+        "c": 6
+      },
+      "spoon": null,
+      "shelf": 8,
+      "avoid": []
+    },
+    {
+      "id": "chili",
+      "name": "小米辣",
+      "alias": [
+        "朝天椒"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 40,
+        "p": 1.9,
+        "f": 0.3,
+        "c": 8
+      },
+      "spoon": 5,
+      "shelf": 10,
+      "avoid": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "winter_melon",
+      "name": "冬瓜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 12,
+        "p": 0.4,
+        "f": 0.2,
+        "c": 2.6
+      },
+      "spoon": null,
+      "shelf": 10,
+      "avoid": []
+    },
+    {
+      "id": "pumpkin",
+      "name": "南瓜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 23,
+        "p": 0.7,
+        "f": 0.1,
+        "c": 5.3
+      },
+      "spoon": null,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "loofah",
+      "name": "丝瓜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 20,
+        "p": 1,
+        "f": 0.2,
+        "c": 4.2
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "lotus_root",
+      "name": "莲藕",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 73,
+        "p": 1.9,
+        "f": 0.2,
+        "c": 16.4
+      },
+      "spoon": null,
+      "shelf": 8,
+      "avoid": []
+    },
+    {
+      "id": "bamboo_shoot",
+      "name": "竹笋",
+      "alias": [
+        "春笋"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 23,
+        "p": 2.6,
+        "f": 0.2,
+        "c": 3.6
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "okra",
+      "name": "秋葵",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 25,
+        "p": 1.9,
+        "f": 0.2,
+        "c": 3.4
+      },
+      "spoon": null,
+      "shelf": 4,
+      "avoid": []
+    },
+    {
+      "id": "asparagus",
+      "name": "芦笋",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 22,
+        "p": 2.2,
+        "f": 0.2,
+        "c": 4.9
+      },
+      "spoon": null,
+      "shelf": 4,
+      "avoid": []
+    },
+    {
+      "id": "mushroom_shiitake",
+      "name": "鲜香菇",
+      "alias": [
+        "香菇"
+      ],
+      "cat": "mushroom",
+      "per100": {
+        "kcal": 26,
+        "p": 2.2,
+        "f": 0.3,
+        "c": 5.2
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "mushroom"
+      ]
+    },
+    {
+      "id": "wood_ear",
+      "name": "干木耳",
+      "alias": [
+        "木耳"
+      ],
+      "cat": "mushroom",
+      "per100": {
+        "kcal": 205,
+        "p": 12.1,
+        "f": 1.5,
+        "c": 65.6
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": [
+        "mushroom"
+      ]
+    },
+    {
+      "id": "enoki",
+      "name": "金针菇",
+      "alias": [],
+      "cat": "mushroom",
+      "per100": {
+        "kcal": 32,
+        "p": 2.4,
+        "f": 0.4,
+        "c": 6
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "mushroom"
+      ]
+    },
+    {
+      "id": "king_oyster",
+      "name": "杏鲍菇",
+      "alias": [],
+      "cat": "mushroom",
+      "per100": {
+        "kcal": 24,
+        "p": 1.3,
+        "f": 0.1,
+        "c": 5
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": [
+        "mushroom"
+      ]
+    },
+    {
+      "id": "corn",
+      "name": "玉米",
+      "alias": [
+        "甜玉米"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 112,
+        "p": 4,
+        "f": 1.2,
+        "c": 22.8
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "green_bean",
+      "name": "四季豆",
+      "alias": [
+        "豆角"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 31,
+        "p": 2,
+        "f": 0.4,
+        "c": 7
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "snow_pea",
+      "name": "荷兰豆",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 30,
+        "p": 2.5,
+        "f": 0.3,
+        "c": 4.9
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "pea",
+      "name": "豌豆粒",
+      "alias": [
+        "青豆"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 111,
+        "p": 7.4,
+        "f": 0.3,
+        "c": 21.2
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "bean_sprout",
+      "name": "绿豆芽",
+      "alias": [
+        "豆芽"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 18,
+        "p": 2.1,
+        "f": 0.1,
+        "c": 2.9
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "chive",
+      "name": "韭菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 26,
+        "p": 2.4,
+        "f": 0.4,
+        "c": 4.5
+      },
+      "spoon": null,
+      "shelf": 4,
+      "avoid": []
+    },
+    {
+      "id": "cilantro",
+      "name": "香菜",
+      "alias": [
+        "芫荽"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 31,
+        "p": 1.8,
+        "f": 0.4,
+        "c": 6.2
+      },
+      "spoon": 3,
+      "shelf": 4,
+      "avoid": [
+        "cilantro"
+      ]
+    },
+    {
+      "id": "garlic_sprout",
+      "name": "蒜苗",
+      "alias": [
+        "青蒜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 37,
+        "p": 2.1,
+        "f": 0.4,
+        "c": 8
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "bitter_melon",
+      "name": "苦瓜",
+      "alias": [
+        "凉瓜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 22,
+        "p": 1,
+        "f": 0.1,
+        "c": 4.9
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "sweet_potato",
+      "name": "红薯",
+      "alias": [
+        "地瓜",
+        "番薯"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 106,
+        "p": 1.6,
+        "f": 0.2,
+        "c": 24.7
+      },
+      "spoon": null,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "yam",
+      "name": "山药",
+      "alias": [
+        "淮山"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 57,
+        "p": 1.9,
+        "f": 0.2,
+        "c": 12.4
+      },
+      "spoon": null,
+      "shelf": 10,
+      "avoid": []
+    },
+    {
+      "id": "pickled_veg",
+      "name": "酸菜",
+      "alias": [
+        "东北酸菜"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 16,
+        "p": 1,
+        "f": 0.2,
+        "c": 3
+      },
+      "spoon": null,
+      "shelf": 60,
+      "avoid": []
+    },
+    {
+      "id": "rice",
+      "name": "大米",
+      "alias": [
+        "大米饭",
+        "米"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 346,
+        "p": 7.4,
+        "f": 0.8,
+        "c": 77.9
+      },
+      "spoon": 18,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "noodle_wheat",
+      "name": "面条",
+      "alias": [
+        "挂面",
+        "手擀面"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 286,
+        "p": 8.3,
+        "f": 0.7,
+        "c": 61
+      },
+      "spoon": null,
+      "shelf": 200,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "flour",
+      "name": "面粉",
+      "alias": [
+        "中筋面粉"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 344,
+        "p": 11.2,
+        "f": 1.5,
+        "c": 73.6
+      },
+      "spoon": 9,
+      "shelf": 240,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "rice_noodle",
+      "name": "米粉",
+      "alias": [
+        "河粉"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 348,
+        "p": 7.3,
+        "f": 0.4,
+        "c": 80
+      },
+      "spoon": null,
+      "shelf": 200,
+      "avoid": []
+    },
+    {
+      "id": "vermicelli",
+      "name": "粉丝",
+      "alias": [
+        "红薯粉"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 338,
+        "p": 0.8,
+        "f": 0.2,
+        "c": 83.7
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "dumpling_wrapper",
+      "name": "饺子皮",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 253,
+        "p": 8.4,
+        "f": 1,
+        "c": 54
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "wonton_wrapper",
+      "name": "馄饨皮",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 250,
+        "p": 8.5,
+        "f": 0.9,
+        "c": 53
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "bread",
+      "name": "吐司面包",
+      "alias": [
+        "面包"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 265,
+        "p": 8.5,
+        "f": 3.2,
+        "c": 50
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "gluten",
+        "dairy"
+      ]
+    },
+    {
+      "id": "oats",
+      "name": "燕麦片",
+      "alias": [
+        "即食燕麦"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 377,
+        "p": 15,
+        "f": 6.7,
+        "c": 61
+      },
+      "spoon": 10,
+      "shelf": 240,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "millet",
+      "name": "小米",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 361,
+        "p": 9.7,
+        "f": 3.1,
+        "c": 75.1
+      },
+      "spoon": 16,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "glutinous_rice",
+      "name": "糯米",
+      "alias": [
+        "江米"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 350,
+        "p": 7.3,
+        "f": 1,
+        "c": 77.5
+      },
+      "spoon": 18,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "apple",
+      "name": "苹果",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 53,
+        "p": 0.4,
+        "f": 0.2,
+        "c": 13.5
+      },
+      "spoon": null,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "lemon",
+      "name": "柠檬",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 37,
+        "p": 1.1,
+        "f": 1.2,
+        "c": 6.2
+      },
+      "spoon": null,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "pineapple",
+      "name": "菠萝",
+      "alias": [
+        "凤梨"
+      ],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 44,
+        "p": 0.5,
+        "f": 0.1,
+        "c": 10.8
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "milk",
+      "name": "牛奶",
+      "alias": [
+        "纯牛奶"
+      ],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 54,
+        "p": 3,
+        "f": 3.2,
+        "c": 3.4
+      },
+      "spoon": 15,
+      "shelf": 7,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "butter",
+      "name": "黄油",
+      "alias": [],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 717,
+        "p": 0.9,
+        "f": 81.1,
+        "c": 0.1
+      },
+      "spoon": 12,
+      "shelf": 60,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "peanut",
+      "name": "花生米",
+      "alias": [
+        "炸花生"
+      ],
+      "cat": "nut",
+      "per100": {
+        "kcal": 574,
+        "p": 24.8,
+        "f": 44.3,
+        "c": 21.7
+      },
+      "spoon": 8,
+      "shelf": 120,
+      "avoid": [
+        "peanut"
+      ]
+    },
+    {
+      "id": "sesame",
+      "name": "白芝麻",
+      "alias": [],
+      "cat": "nut",
+      "per100": {
+        "kcal": 536,
+        "p": 18,
+        "f": 46.1,
+        "c": 24
+      },
+      "spoon": 6,
+      "shelf": 180,
+      "avoid": [
+        "sesame"
+      ]
+    },
+    {
+      "id": "walnut",
+      "name": "核桃仁",
+      "alias": [],
+      "cat": "nut",
+      "per100": {
+        "kcal": 646,
+        "p": 14.9,
+        "f": 58.8,
+        "c": 19.1
+      },
+      "spoon": 8,
+      "shelf": 120,
+      "avoid": [
+        "nut"
+      ]
+    },
+    {
+      "id": "red_date",
+      "name": "红枣",
+      "alias": [
+        "大枣"
+      ],
+      "cat": "dry",
+      "per100": {
+        "kcal": 276,
+        "p": 3.2,
+        "f": 0.5,
+        "c": 67.8
+      },
+      "spoon": 8,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "goji",
+      "name": "枸杞",
+      "alias": [],
+      "cat": "dry",
+      "per100": {
+        "kcal": 258,
+        "p": 13.9,
+        "f": 1.5,
+        "c": 64.1
+      },
+      "spoon": 6,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "salmon",
+      "name": "三文鱼",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 208,
+        "p": 20.0,
+        "f": 13.0,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "cod",
+      "name": "鳕鱼",
+      "alias": [
+        "银鳕鱼"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 88,
+        "p": 20.4,
+        "f": 0.5,
+        "c": 0.5
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "mackerel",
+      "name": "鲭鱼",
+      "alias": [
+        "青花鱼"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 205,
+        "p": 19.0,
+        "f": 13.9,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "tuna_can",
+      "name": "水浸金枪鱼罐头",
+      "alias": [
+        "金枪鱼罐头"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 116,
+        "p": 26.0,
+        "f": 1.0,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 240,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "scallop",
+      "name": "扇贝",
+      "alias": [
+        "带子"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 60,
+        "p": 11.1,
+        "f": 0.6,
+        "c": 2.6
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "nori",
+      "name": "海苔",
+      "alias": [
+        "紫菜片"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 177,
+        "p": 29.4,
+        "f": 4.8,
+        "c": 33.4
+      },
+      "spoon": 2,
+      "shelf": 300,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "egg_white",
+      "name": "蛋清",
+      "alias": [
+        "蛋白液"
+      ],
+      "cat": "egg",
+      "per100": {
+        "kcal": 52,
+        "p": 10.9,
+        "f": 0.2,
+        "c": 0.7
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "egg"
+      ]
+    },
+    {
+      "id": "greek_yogurt",
+      "name": "希腊酸奶",
+      "alias": [
+        "无糖希腊酸奶"
+      ],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 59,
+        "p": 10.0,
+        "f": 0.4,
+        "c": 3.6
+      },
+      "spoon": null,
+      "shelf": 14,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "yogurt",
+      "name": "无糖酸奶",
+      "alias": [],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 62,
+        "p": 3.5,
+        "f": 3.3,
+        "c": 4.7
+      },
+      "spoon": null,
+      "shelf": 14,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "cheese",
+      "name": "马苏里拉奶酪",
+      "alias": [
+        "芝士"
+      ],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 300,
+        "p": 22.0,
+        "f": 22.0,
+        "c": 2.5
+      },
+      "spoon": null,
+      "shelf": 60,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "skim_milk",
+      "name": "低脂牛奶",
+      "alias": [],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 42,
+        "p": 3.4,
+        "f": 1.0,
+        "c": 5.0
+      },
+      "spoon": 15,
+      "shelf": 7,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "soy_milk",
+      "name": "无糖豆浆",
+      "alias": [],
+      "cat": "soy",
+      "per100": {
+        "kcal": 31,
+        "p": 3.0,
+        "f": 1.6,
+        "c": 1.2
+      },
+      "spoon": 15,
+      "shelf": 3,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "protein_powder",
+      "name": "乳清蛋白粉",
+      "alias": [
+        "蛋白粉"
+      ],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 380,
+        "p": 75.0,
+        "f": 5.0,
+        "c": 8.0
+      },
+      "spoon": 10,
+      "shelf": 365,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "avocado",
+      "name": "牛油果",
+      "alias": [
+        "鳄梨"
+      ],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 160,
+        "p": 2.0,
+        "f": 15.0,
+        "c": 9.0
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "blueberry",
+      "name": "蓝莓",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 57,
+        "p": 0.7,
+        "f": 0.3,
+        "c": 14.5
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "strawberry",
+      "name": "草莓",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 32,
+        "p": 0.7,
+        "f": 0.3,
+        "c": 7.7
+      },
+      "spoon": null,
+      "shelf": 4,
+      "avoid": []
+    },
+    {
+      "id": "kiwi",
+      "name": "猕猴桃",
+      "alias": [
+        "奇异果"
+      ],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 61,
+        "p": 1.1,
+        "f": 0.5,
+        "c": 14.7
+      },
+      "spoon": null,
+      "shelf": 10,
+      "avoid": []
+    },
+    {
+      "id": "orange",
+      "name": "橙子",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 48,
+        "p": 0.8,
+        "f": 0.2,
+        "c": 11.0
+      },
+      "spoon": null,
+      "shelf": 12,
+      "avoid": []
+    },
+    {
+      "id": "pomegranate",
+      "name": "石榴",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 83,
+        "p": 1.7,
+        "f": 1.2,
+        "c": 18.7
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "kale",
+      "name": "羽衣甘蓝",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 50,
+        "p": 3.3,
+        "f": 0.9,
+        "c": 8.8
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "purple_cabbage",
+      "name": "紫甘蓝",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 25,
+        "p": 1.4,
+        "f": 0.2,
+        "c": 6.1
+      },
+      "spoon": null,
+      "shelf": 12,
+      "avoid": []
+    },
+    {
+      "id": "beetroot",
+      "name": "甜菜根",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 43,
+        "p": 1.6,
+        "f": 0.2,
+        "c": 9.6
+      },
+      "spoon": null,
+      "shelf": 14,
+      "avoid": []
+    },
+    {
+      "id": "zucchini",
+      "name": "西葫芦",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 19,
+        "p": 0.8,
+        "f": 0.2,
+        "c": 3.8
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "konjac",
+      "name": "魔芋",
+      "alias": [
+        "魔芋丝"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 12,
+        "p": 0.1,
+        "f": 0.0,
+        "c": 3.0
+      },
+      "spoon": null,
+      "shelf": 30,
+      "avoid": []
+    },
+    {
+      "id": "quinoa",
+      "name": "藜麦",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 368,
+        "p": 14.1,
+        "f": 6.1,
+        "c": 64.2
+      },
+      "spoon": 15,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "chickpea",
+      "name": "鹰嘴豆",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 340,
+        "p": 21.2,
+        "f": 4.2,
+        "c": 60.9
+      },
+      "spoon": null,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "lentil",
+      "name": "扁豆",
+      "alias": [
+        "小扁豆"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 353,
+        "p": 24.6,
+        "f": 1.1,
+        "c": 60.0
+      },
+      "spoon": null,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "black_rice",
+      "name": "黑米",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 341,
+        "p": 9.4,
+        "f": 2.5,
+        "c": 72.2
+      },
+      "spoon": 18,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "brown_rice",
+      "name": "糙米",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 348,
+        "p": 7.7,
+        "f": 2.7,
+        "c": 77.2
+      },
+      "spoon": 18,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "soba",
+      "name": "荞麦面",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 340,
+        "p": 13.0,
+        "f": 2.3,
+        "c": 71.0
+      },
+      "spoon": null,
+      "shelf": 200,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "whole_wheat_bread",
+      "name": "全麦面包",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 247,
+        "p": 13.0,
+        "f": 3.4,
+        "c": 41.0
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "whole_wheat_pasta",
+      "name": "全麦意面",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 348,
+        "p": 13.0,
+        "f": 2.5,
+        "c": 70.0
+      },
+      "spoon": null,
+      "shelf": 240,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "意大利面",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 371,
+        "p": 13.0,
+        "f": 1.5,
+        "c": 74.7
+      },
+      "spoon": null,
+      "shelf": 240,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "canned_tomato",
+      "name": "番茄罐头",
+      "alias": [
+        "去皮番茄"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 32,
+        "p": 1.6,
+        "f": 0.3,
+        "c": 6.4
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "purple_sweet_potato",
+      "name": "紫薯",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 82,
+        "p": 1.6,
+        "f": 0.2,
+        "c": 18.8
+      },
+      "spoon": null,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "taro",
+      "name": "芋头",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 79,
+        "p": 2.2,
+        "f": 0.2,
+        "c": 17.1
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "white_fungus",
+      "name": "银耳",
+      "alias": [],
+      "cat": "mushroom",
+      "per100": {
+        "kcal": 200,
+        "p": 10.0,
+        "f": 1.4,
+        "c": 67.3
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": [
+        "mushroom"
+      ]
+    },
+    {
+      "id": "almond",
+      "name": "巴旦木",
+      "alias": [
+        "杏仁"
+      ],
+      "cat": "nut",
+      "per100": {
+        "kcal": 579,
+        "p": 21.2,
+        "f": 49.9,
+        "c": 21.6
+      },
+      "spoon": 8,
+      "shelf": 180,
+      "avoid": [
+        "nut"
+      ]
+    },
+    {
+      "id": "cashew",
+      "name": "腰果",
+      "alias": [],
+      "cat": "nut",
+      "per100": {
+        "kcal": 553,
+        "p": 18.2,
+        "f": 43.8,
+        "c": 30.2
+      },
+      "spoon": 8,
+      "shelf": 180,
+      "avoid": [
+        "nut"
+      ]
+    },
+    {
+      "id": "pine_nut",
+      "name": "松子",
+      "alias": [],
+      "cat": "nut",
+      "per100": {
+        "kcal": 673,
+        "p": 13.7,
+        "f": 68.4,
+        "c": 13.1
+      },
+      "spoon": 8,
+      "shelf": 180,
+      "avoid": [
+        "nut"
+      ]
+    },
+    {
+      "id": "pumpkin_seed",
+      "name": "南瓜籽",
+      "alias": [],
+      "cat": "nut",
+      "per100": {
+        "kcal": 559,
+        "p": 30.2,
+        "f": 49.0,
+        "c": 10.7
+      },
+      "spoon": 8,
+      "shelf": 180,
+      "avoid": [
+        "nut"
+      ]
+    },
+    {
+      "id": "chia",
+      "name": "奇亚籽",
+      "alias": [],
+      "cat": "nut",
+      "per100": {
+        "kcal": 486,
+        "p": 16.5,
+        "f": 30.7,
+        "c": 42.1
+      },
+      "spoon": 8,
+      "shelf": 365,
+      "avoid": []
+    },
+    {
+      "id": "flaxseed",
+      "name": "亚麻籽",
+      "alias": [
+        "亚麻籽粉"
+      ],
+      "cat": "nut",
+      "per100": {
+        "kcal": 534,
+        "p": 18.3,
+        "f": 42.2,
+        "c": 28.9
+      },
+      "spoon": 8,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "sardine",
+      "name": "沙丁鱼",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 208,
+        "p": 24.6,
+        "f": 11.5,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "yellow_croaker",
+      "name": "黄花鱼",
+      "alias": [
+        "黄鱼"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 97,
+        "p": 17.7,
+        "f": 2.5,
+        "c": 0.8
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "pomfret",
+      "name": "鲳鱼",
+      "alias": [
+        "平鱼"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 140,
+        "p": 18.5,
+        "f": 7.3,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "tilapia",
+      "name": "罗非鱼",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 98,
+        "p": 18.4,
+        "f": 1.5,
+        "c": 2.8
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "crab",
+      "name": "螃蟹",
+      "alias": [
+        "梭子蟹"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 95,
+        "p": 17.5,
+        "f": 2.6,
+        "c": 2.3
+      },
+      "spoon": null,
+      "shelf": 1,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "mussel",
+      "name": "青口贝",
+      "alias": [
+        "贻贝"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 86,
+        "p": 11.9,
+        "f": 2.2,
+        "c": 6.1
+      },
+      "spoon": null,
+      "shelf": 1,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "oyster_meat",
+      "name": "生蚝",
+      "alias": [
+        "牡蛎"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 73,
+        "p": 10.9,
+        "f": 1.5,
+        "c": 6.2
+      },
+      "spoon": null,
+      "shelf": 1,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "eel",
+      "name": "鳗鱼",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 236,
+        "p": 18.6,
+        "f": 16.0,
+        "c": 2.3
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "wakame",
+      "name": "裙带菜",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 45,
+        "p": 3.0,
+        "f": 0.6,
+        "c": 6.5
+      },
+      "spoon": null,
+      "shelf": 240,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "turkey_breast",
+      "name": "火鸡胸",
+      "alias": [],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 135,
+        "p": 23.0,
+        "f": 3.5,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "beef_sirloin",
+      "name": "西冷牛排",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 250,
+        "p": 21.0,
+        "f": 18.0,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "beef"
+      ]
+    },
+    {
+      "id": "ham",
+      "name": "火腿片",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 175,
+        "p": 16.0,
+        "f": 10.0,
+        "c": 4.0
+      },
+      "spoon": null,
+      "shelf": 30,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "quail_egg",
+      "name": "鹌鹑蛋",
+      "alias": [],
+      "cat": "egg",
+      "per100": {
+        "kcal": 160,
+        "p": 12.8,
+        "f": 11.1,
+        "c": 2.1
+      },
+      "spoon": null,
+      "shelf": 21,
+      "avoid": [
+        "egg"
+      ]
+    },
+    {
+      "id": "tempeh",
+      "name": "天贝",
+      "alias": [],
+      "cat": "soy",
+      "per100": {
+        "kcal": 193,
+        "p": 19.0,
+        "f": 11.0,
+        "c": 9.0
+      },
+      "spoon": null,
+      "shelf": 7,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "seitan",
+      "name": "面筋",
+      "alias": [
+        "烤麸"
+      ],
+      "cat": "soy",
+      "per100": {
+        "kcal": 143,
+        "p": 25.0,
+        "f": 1.0,
+        "c": 6.0
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "black_bean",
+      "name": "黑豆",
+      "alias": [],
+      "cat": "soy",
+      "per100": {
+        "kcal": 341,
+        "p": 36.0,
+        "f": 15.9,
+        "c": 33.6
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "red_bean",
+      "name": "红豆",
+      "alias": [
+        "赤小豆"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 324,
+        "p": 20.2,
+        "f": 0.6,
+        "c": 63.4
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "mung_bean",
+      "name": "绿豆",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 329,
+        "p": 21.6,
+        "f": 0.8,
+        "c": 62.0
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "edamame",
+      "name": "毛豆",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 131,
+        "p": 13.1,
+        "f": 5.0,
+        "c": 10.5
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "water_spinach",
+      "name": "空心菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 23,
+        "p": 2.2,
+        "f": 0.3,
+        "c": 3.6
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "celtuce",
+      "name": "莴笋",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 15,
+        "p": 1.0,
+        "f": 0.1,
+        "c": 2.8
+      },
+      "spoon": null,
+      "shelf": 7,
+      "avoid": []
+    },
+    {
+      "id": "garland",
+      "name": "茼蒿",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 21,
+        "p": 1.9,
+        "f": 0.3,
+        "c": 3.9
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "leek",
+      "name": "大葱",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 33,
+        "p": 1.7,
+        "f": 0.3,
+        "c": 6.5
+      },
+      "spoon": 5,
+      "shelf": 10,
+      "avoid": []
+    },
+    {
+      "id": "shimeji",
+      "name": "蟹味菇",
+      "alias": [],
+      "cat": "mushroom",
+      "per100": {
+        "kcal": 22,
+        "p": 2.0,
+        "f": 0.2,
+        "c": 4.5
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "mushroom"
+      ]
+    },
+    {
+      "id": "button_mushroom",
+      "name": "口蘑",
+      "alias": [
+        "白蘑菇"
+      ],
+      "cat": "mushroom",
+      "per100": {
+        "kcal": 22,
+        "p": 3.1,
+        "f": 0.3,
+        "c": 3.3
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "mushroom"
+      ]
+    },
+    {
+      "id": "oyster_mushroom",
+      "name": "平菇",
+      "alias": [],
+      "cat": "mushroom",
+      "per100": {
+        "kcal": 24,
+        "p": 1.9,
+        "f": 0.3,
+        "c": 4.6
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "mushroom"
+      ]
+    },
+    {
+      "id": "lily_bulb",
+      "name": "百合",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 166,
+        "p": 3.2,
+        "f": 0.1,
+        "c": 38.8
+      },
+      "spoon": null,
+      "shelf": 20,
+      "avoid": []
+    },
+    {
+      "id": "lotus_seed",
+      "name": "莲子",
+      "alias": [],
+      "cat": "dry",
+      "per100": {
+        "kcal": 350,
+        "p": 17.2,
+        "f": 2.0,
+        "c": 67.2
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "job_tears",
+      "name": "薏米",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 361,
+        "p": 12.8,
+        "f": 3.3,
+        "c": 71.1
+      },
+      "spoon": 16,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "tomato_dried",
+      "name": "番茄干",
+      "alias": [
+        "油浸番茄干"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 213,
+        "p": 5.0,
+        "f": 14.0,
+        "c": 18.0
+      },
+      "spoon": null,
+      "shelf": 180,
+      "avoid": []
+    },
+    {
+      "id": "olive_green",
+      "name": "橄榄",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 145,
+        "p": 0.8,
+        "f": 15.3,
+        "c": 3.8
+      },
+      "spoon": null,
+      "shelf": 180,
+      "avoid": []
+    },
+    {
+      "id": "pickled_cucumber",
+      "name": "酸黄瓜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 16,
+        "p": 0.7,
+        "f": 0.2,
+        "c": 2.6
+      },
+      "spoon": null,
+      "shelf": 180,
+      "avoid": []
+    },
+    {
+      "id": "basil",
+      "name": "罗勒",
+      "alias": [
+        "九层塔"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 23,
+        "p": 3.2,
+        "f": 0.4,
+        "c": 2.7
+      },
+      "spoon": 3,
+      "shelf": 4,
+      "avoid": []
+    },
+    {
+      "id": "parsley",
+      "name": "欧芹",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 36,
+        "p": 3.0,
+        "f": 0.8,
+        "c": 6.3
+      },
+      "spoon": 3,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "rice_cake",
+      "name": "年糕",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 156,
+        "p": 3.3,
+        "f": 0.6,
+        "c": 34.7
+      },
+      "spoon": null,
+      "shelf": 30,
+      "avoid": []
+    },
+    {
+      "id": "mantou",
+      "name": "馒头",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 223,
+        "p": 7.0,
+        "f": 1.1,
+        "c": 47.0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "whole_wheat_flour",
+      "name": "全麦面粉",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 340,
+        "p": 13.2,
+        "f": 2.5,
+        "c": 71.0
+      },
+      "spoon": 9,
+      "shelf": 240,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "cornmeal",
+      "name": "玉米面",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 341,
+        "p": 8.0,
+        "f": 3.8,
+        "c": 73.1
+      },
+      "spoon": 9,
+      "shelf": 240,
+      "avoid": []
+    },
+    {
+      "id": "bagel",
+      "name": "贝果",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 257,
+        "p": 10.0,
+        "f": 1.6,
+        "c": 50.5
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "oat_bran",
+      "name": "燕麦麸",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 246,
+        "p": 17.3,
+        "f": 7.0,
+        "c": 66.0
+      },
+      "spoon": 8,
+      "shelf": 240,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "barley",
+      "name": "大麦米",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 354,
+        "p": 12.5,
+        "f": 2.3,
+        "c": 73.0
+      },
+      "spoon": 18,
+      "shelf": 300,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "buckwheat",
+      "name": "荞麦米",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 337,
+        "p": 13.3,
+        "f": 2.3,
+        "c": 71.0
+      },
+      "spoon": 18,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "rice_noodle_thick",
+      "name": "宽米粉",
+      "alias": [
+        "河粉"
+      ],
+      "cat": "staple",
+      "per100": {
+        "kcal": 348,
+        "p": 7.3,
+        "f": 0.4,
+        "c": 80.0
+      },
+      "spoon": null,
+      "shelf": 200,
+      "avoid": []
+    },
+    {
+      "id": "banana",
+      "name": "香蕉",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 93,
+        "p": 1.4,
+        "f": 0.2,
+        "c": 22.0
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "grape",
+      "name": "葡萄",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 43,
+        "p": 0.5,
+        "f": 0.2,
+        "c": 10.3
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "pear",
+      "name": "梨",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 51,
+        "p": 0.4,
+        "f": 0.2,
+        "c": 13.3
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "mango",
+      "name": "芒果",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 60,
+        "p": 0.8,
+        "f": 0.4,
+        "c": 15.0
+      },
+      "spoon": null,
+      "shelf": 7,
+      "avoid": []
+    },
+    {
+      "id": "watermelon",
+      "name": "西瓜",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 31,
+        "p": 0.5,
+        "f": 0.1,
+        "c": 7.9
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "papaya",
+      "name": "木瓜",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 30,
+        "p": 0.4,
+        "f": 0.1,
+        "c": 7.2
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "lime",
+      "name": "青柠",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 30,
+        "p": 0.7,
+        "f": 0.2,
+        "c": 10.5
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "grapefruit",
+      "name": "西柚",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 33,
+        "p": 0.8,
+        "f": 0.1,
+        "c": 8.4
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "dragon_fruit",
+      "name": "火龙果",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 55,
+        "p": 1.1,
+        "f": 0.2,
+        "c": 13.3
+      },
+      "spoon": null,
+      "shelf": 7,
+      "avoid": []
+    },
+    {
+      "id": "cream_cheese",
+      "name": "奶油奶酪",
+      "alias": [],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 342,
+        "p": 6.2,
+        "f": 34.4,
+        "c": 4.1
+      },
+      "spoon": 15,
+      "shelf": 30,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "cottage_cheese",
+      "name": "乡村奶酪",
+      "alias": [],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 98,
+        "p": 11.1,
+        "f": 4.3,
+        "c": 3.4
+      },
+      "spoon": null,
+      "shelf": 14,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "peanut_butter",
+      "name": "花生酱",
+      "alias": [],
+      "cat": "nut",
+      "per100": {
+        "kcal": 588,
+        "p": 25.1,
+        "f": 50.4,
+        "c": 20.0
+      },
+      "spoon": 16,
+      "shelf": 180,
+      "avoid": [
+        "peanut"
+      ]
+    },
+    {
+      "id": "pork_ear",
+      "name": "猪耳朵",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 190,
+        "p": 22.5,
+        "f": 11.0,
+        "c": 1.0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_tripe",
+      "name": "猪肚",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 110,
+        "p": 15.2,
+        "f": 5.1,
+        "c": 0.7
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_blood",
+      "name": "猪血",
+      "alias": [
+        "血豆腐"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 55,
+        "p": 12.2,
+        "f": 0.3,
+        "c": 0.9
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_kidney",
+      "name": "猪腰",
+      "alias": [
+        "猪腰子"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 96,
+        "p": 15.4,
+        "f": 3.2,
+        "c": 1.4
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "pork_hock",
+      "name": "猪肘",
+      "alias": [
+        "蹄膀"
+      ],
+      "cat": "meat",
+      "per100": {
+        "kcal": 320,
+        "p": 17.0,
+        "f": 28.0,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "pork"
+      ]
+    },
+    {
+      "id": "chicken_gizzard",
+      "name": "鸡胗",
+      "alias": [],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 118,
+        "p": 19.2,
+        "f": 2.8,
+        "c": 4.0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "chicken_liver",
+      "name": "鸡肝",
+      "alias": [],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 121,
+        "p": 16.6,
+        "f": 4.8,
+        "c": 2.8
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "chicken_heart",
+      "name": "鸡心",
+      "alias": [],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 172,
+        "p": 15.9,
+        "f": 11.8,
+        "c": 1.0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "duck_blood",
+      "name": "鸭血",
+      "alias": [],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 108,
+        "p": 13.6,
+        "f": 0.4,
+        "c": 12.4
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "quail",
+      "name": "鹌鹑",
+      "alias": [],
+      "cat": "poultry",
+      "per100": {
+        "kcal": 170,
+        "p": 20.2,
+        "f": 8.3,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": []
+    },
+    {
+      "id": "beef_tripe",
+      "name": "牛百叶",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 72,
+        "p": 14.5,
+        "f": 1.6,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "beef"
+      ]
+    },
+    {
+      "id": "lamb_chop",
+      "name": "羊排",
+      "alias": [],
+      "cat": "meat",
+      "per100": {
+        "kcal": 230,
+        "p": 18.0,
+        "f": 17.0,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": [
+        "lamb"
+      ]
+    },
+    {
+      "id": "carp",
+      "name": "鲤鱼",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 109,
+        "p": 17.6,
+        "f": 4.1,
+        "c": 0.5
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "snakehead",
+      "name": "黑鱼",
+      "alias": [
+        "乌鱼"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 85,
+        "p": 18.5,
+        "f": 1.2,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "loach",
+      "name": "泥鳅",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 96,
+        "p": 17.9,
+        "f": 2.0,
+        "c": 0.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "river_eel",
+      "name": "黄鳝",
+      "alias": [
+        "鳝鱼"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 89,
+        "p": 18.0,
+        "f": 1.4,
+        "c": 0.1
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "fish_ball",
+      "name": "鱼丸",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 120,
+        "p": 12.0,
+        "f": 3.5,
+        "c": 9.0
+      },
+      "spoon": null,
+      "shelf": 30,
+      "avoid": [
+        "seafood",
+        "gluten"
+      ]
+    },
+    {
+      "id": "crab_stick",
+      "name": "蟹棒",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 130,
+        "p": 8.0,
+        "f": 1.0,
+        "c": 20.0
+      },
+      "spoon": null,
+      "shelf": 180,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "dried_scallop",
+      "name": "干贝",
+      "alias": [
+        "瑶柱"
+      ],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 264,
+        "p": 55.6,
+        "f": 2.4,
+        "c": 5.3
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "razor_clam",
+      "name": "蛏子",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 40,
+        "p": 7.3,
+        "f": 0.3,
+        "c": 2.1
+      },
+      "spoon": null,
+      "shelf": 1,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "dried_squid",
+      "name": "鱿鱼干",
+      "alias": [],
+      "cat": "seafood",
+      "per100": {
+        "kcal": 313,
+        "p": 60.0,
+        "f": 4.0,
+        "c": 8.0
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": [
+        "seafood"
+      ]
+    },
+    {
+      "id": "garlic_bolt",
+      "name": "蒜苔",
+      "alias": [
+        "蒜薹"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 61,
+        "p": 2.0,
+        "f": 0.1,
+        "c": 15.4
+      },
+      "spoon": null,
+      "shelf": 7,
+      "avoid": []
+    },
+    {
+      "id": "cowpea",
+      "name": "豇豆",
+      "alias": [
+        "长豆角"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 34,
+        "p": 2.9,
+        "f": 0.3,
+        "c": 5.8
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "choy_sum",
+      "name": "菜心",
+      "alias": [
+        "广东菜心"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 20,
+        "p": 2.8,
+        "f": 0.4,
+        "c": 2.0
+      },
+      "spoon": null,
+      "shelf": 4,
+      "avoid": []
+    },
+    {
+      "id": "baby_cabbage",
+      "name": "娃娃菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 13,
+        "p": 1.4,
+        "f": 0.1,
+        "c": 2.4
+      },
+      "spoon": null,
+      "shelf": 10,
+      "avoid": []
+    },
+    {
+      "id": "shepherd_purse",
+      "name": "荠菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 31,
+        "p": 2.9,
+        "f": 0.4,
+        "c": 4.7
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "water_bamboo",
+      "name": "茭白",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 23,
+        "p": 1.2,
+        "f": 0.2,
+        "c": 5.9
+      },
+      "spoon": null,
+      "shelf": 6,
+      "avoid": []
+    },
+    {
+      "id": "water_chestnut",
+      "name": "荸荠",
+      "alias": [
+        "马蹄"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 61,
+        "p": 1.2,
+        "f": 0.2,
+        "c": 14.2
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "winter_shoot",
+      "name": "冬笋",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 40,
+        "p": 4.1,
+        "f": 0.1,
+        "c": 6.5
+      },
+      "spoon": null,
+      "shelf": 10,
+      "avoid": []
+    },
+    {
+      "id": "mustard_green",
+      "name": "芥菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 24,
+        "p": 2.0,
+        "f": 0.4,
+        "c": 3.6
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "amaranth",
+      "name": "苋菜",
+      "alias": [],
+      "cat": "veg",
+      "per100": {
+        "kcal": 25,
+        "p": 2.8,
+        "f": 0.3,
+        "c": 3.2
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "pea_shoot",
+      "name": "豌豆尖",
+      "alias": [
+        "豆苗"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 34,
+        "p": 4.9,
+        "f": 0.4,
+        "c": 4.3
+      },
+      "spoon": null,
+      "shelf": 3,
+      "avoid": []
+    },
+    {
+      "id": "mustard_tuber",
+      "name": "榨菜",
+      "alias": [
+        "榨菜丝"
+      ],
+      "cat": "veg",
+      "per100": {
+        "kcal": 29,
+        "p": 2.2,
+        "f": 0.3,
+        "c": 6.5
+      },
+      "spoon": null,
+      "shelf": 180,
+      "avoid": []
+    },
+    {
+      "id": "tofu_puff",
+      "name": "油豆腐",
+      "alias": [
+        "豆泡"
+      ],
+      "cat": "soy",
+      "per100": {
+        "kcal": 245,
+        "p": 17.0,
+        "f": 17.6,
+        "c": 4.9
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "suji",
+      "name": "素鸡",
+      "alias": [],
+      "cat": "soy",
+      "per100": {
+        "kcal": 194,
+        "p": 16.5,
+        "f": 12.5,
+        "c": 4.2
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": [
+        "soy"
+      ]
+    },
+    {
+      "id": "sweet_potato_noodle",
+      "name": "红薯粉条",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 337,
+        "p": 0.5,
+        "f": 0.1,
+        "c": 84.2
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "instant_noodle",
+      "name": "方便面",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 472,
+        "p": 9.5,
+        "f": 21.1,
+        "c": 61.6
+      },
+      "spoon": null,
+      "shelf": 180,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "youtiao",
+      "name": "油条",
+      "alias": [],
+      "cat": "staple",
+      "per100": {
+        "kcal": 388,
+        "p": 6.9,
+        "f": 17.6,
+        "c": 51.0
+      },
+      "spoon": null,
+      "shelf": 2,
+      "avoid": [
+        "gluten"
+      ]
+    },
+    {
+      "id": "dried_bamboo",
+      "name": "笋干",
+      "alias": [],
+      "cat": "dry",
+      "per100": {
+        "kcal": 253,
+        "p": 26.0,
+        "f": 1.1,
+        "c": 53.4
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "meigancai",
+      "name": "梅干菜",
+      "alias": [],
+      "cat": "dry",
+      "per100": {
+        "kcal": 259,
+        "p": 13.4,
+        "f": 1.3,
+        "c": 47.0
+      },
+      "spoon": null,
+      "shelf": 300,
+      "avoid": []
+    },
+    {
+      "id": "cream",
+      "name": "淡奶油",
+      "alias": [],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 345,
+        "p": 2.1,
+        "f": 37.0,
+        "c": 2.8
+      },
+      "spoon": 15,
+      "shelf": 14,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "condensed_milk",
+      "name": "炼乳",
+      "alias": [],
+      "cat": "dairy",
+      "per100": {
+        "kcal": 321,
+        "p": 7.9,
+        "f": 8.7,
+        "c": 55.4
+      },
+      "spoon": 20,
+      "shelf": 180,
+      "avoid": [
+        "dairy"
+      ]
+    },
+    {
+      "id": "tangerine",
+      "name": "橘子",
+      "alias": [
+        "桔子"
+      ],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 44,
+        "p": 0.8,
+        "f": 0.1,
+        "c": 11.5
+      },
+      "spoon": null,
+      "shelf": 15,
+      "avoid": []
+    },
+    {
+      "id": "peach",
+      "name": "桃子",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 42,
+        "p": 0.9,
+        "f": 0.1,
+        "c": 10.9
+      },
+      "spoon": null,
+      "shelf": 7,
+      "avoid": []
+    },
+    {
+      "id": "lychee",
+      "name": "荔枝",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 71,
+        "p": 0.9,
+        "f": 0.2,
+        "c": 16.6
+      },
+      "spoon": null,
+      "shelf": 5,
+      "avoid": []
+    },
+    {
+      "id": "persimmon",
+      "name": "柿子",
+      "alias": [],
+      "cat": "fruit",
+      "per100": {
+        "kcal": 71,
+        "p": 0.4,
+        "f": 0.1,
+        "c": 18.5
+      },
+      "spoon": null,
+      "shelf": 10,
+      "avoid": []
+    }
+  ]
+}

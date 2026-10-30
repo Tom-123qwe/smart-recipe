@@ -1,0 +1,13 @@
+{
+  "name": "smart-recipe",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "家常菜谱 · 智能厨房 —— 纯静态离线菜谱与食材管理",
+  "scripts": {
+    "build": "python tools/build.py",
+    "check": "python tools/check_imports.py",
+    "images": "python tools/gen_images.py",
+    "serve": "python -m http.server 8080"
+  }
+}

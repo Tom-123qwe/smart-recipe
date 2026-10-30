@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "name": "食材替代方案",
+    "version": "1.0.0",
+    "desc": "宽松匹配模式下，缺食材时按此表给出离线替代建议。ratio 表示替代品用量为原食材的倍数；byCategory 为兜底规则，按食材大类给通用替代。全部离线，无外部查询。",
+    "updated": "2026-10-30"
+  },
+  "items": {
+    "pork_belly": [
+      { "name": "前腿肉", "note": "肥瘦比例约 4:6，需多炖 10 分钟，成品略瘦不腻" },
+      { "name": "梅花肉", "note": "带雪花纹理，口感接近，价格更高" },
+      { "id": "pork_ribs", "name": "排骨", "ratio": 1.1, "note": "做红烧/糖醋类可直接换，炖煮时间缩短到 30 分钟" }
+    ],
+    "pork_lean": [
+      { "id": "chicken_breast", "name": "鸡胸肉", "ratio": 1.0, "note": "更低脂，切丝后加淀粉上浆防止发柴" },
+      { "id": "beef_tenderloin", "name": "牛里脊", "ratio": 1.0, "note": "风味更浓，炒制时间缩短 20 秒" },
+      { "name": "猪后腿肉", "note": "纹理粗一点，逆纹切丝口感更嫩" }
+    ],
+    "pork_mince": [
+      { "id": "beef_mince", "name": "牛肉末", "ratio": 1.0, "note": "做麻婆豆腐、蚂蚁上树同样合适，需多加 5ml 油防干" },
+      { "id": "chicken_breast", "name": "鸡胸肉剁末", "ratio": 1.0, "note": "更清淡，需补 5g 淀粉保持黏性" },
+      { "name": "香菇末 + 豆腐碎", "ratio": 0.8, "note": "素食方案，适合麻婆豆腐等酱香重的菜" }
+    ],
+    "pork_ribs": [
+      { "name": "猪颈骨", "ratio": 1.1, "note": "炖汤更实惠，肉少汤鲜" },
+      { "id": "chicken_leg", "name": "鸡腿块", "ratio": 1.0, "note": "糖醋/红烧口味通用，炖煮时间减半" }
+    ],
+    "pork_trotter": [
+      { "name": "猪肘", "ratio": 1.0, "note": "胶质同样丰富，需增加 20 分钟炖煮" },
+      { "id": "chicken_feet", "name": "鸡爪", "ratio": 1.2, "note": "更易软烂，适合卤味" }
+    ],
+    "pork_liver": [
+      { "name": "鸡肝", "ratio": 1.0, "note": "腥味更轻，焯水时间缩短 10 秒" },
+      { "id": "pork_lean", "name": "里脊片", "note": "不吃内脏时的替代，口感完全不同但同样适合爆炒" }
+    ],
+    "sausage": [
+      { "id": "bacon", "name": "培根", "ratio": 0.9, "note": "咸度高，菜里要减盐" },
+      { "id": "ham_sausage", "name": "火腿肠", "ratio": 1.0, "note": "儿童口味友好，切片后最后下锅" }
+    ],
+    "beef_brisket": [
+      { "name": "牛腱子", "id": "beef_shank", "ratio": 1.0, "note": "筋膜多，炖煮后更有嚼劲，需加 20 分钟" },
+      { "name": "牛肋条", "ratio": 1.0, "note": "油花更足，汤更香" }
+    ],
+    "beef_tenderloin": [
+      { "id": "beef_shank", "name": "牛腱顺纹切片", "note": "必须逆纹切薄，腌制加小苏打 0.5g 更嫩" },
+      { "id": "pork_lean", "name": "猪里脊", "ratio": 1.0, "note": "黑椒牛柳换猪柳，风味接近且更便宜" }
+    ],
+    "lamb_leg": [
+      { "name": "羊肩肉", "ratio": 1.0, "note": "肥瘦更均匀，孜然类做法更香" },
+      { "id": "beef_tenderloin", "name": "牛里脊", "note": "不吃羊时替换，需减少孜然用量 1/3" }
+    ],
+    "chicken_leg": [
+      { "id": "chicken_whole", "name": "整鸡剁块", "ratio": 1.0, "note": "适合焖、炖，注意大小块均匀" },
+      { "id": "chicken_breast", "name": "鸡胸肉", "ratio": 1.0, "note": "减脂首选，烹饪时间缩短 1/3" }
+    ],
+    "chicken_wing": [
+      { "id": "chicken_leg", "name": "鸡腿剁块", "ratio": 1.0, "note": "肉更多，需延长焖制 5 分钟" },
+      { "name": "翅根", "ratio": 1.0, "note": "肉质更紧，划刀更要多划两道" }
+    ],
+    "chicken_breast": [
+      { "id": "chicken_leg", "name": "去皮鸡腿肉", "ratio": 1.0, "note": "更嫩不易柴，脂肪略高" },
+      { "id": "pork_lean", "name": "猪里脊", "note": "宫保鸡丁换成宫保肉丁，同样成立" }
+    ],
+    "chicken_whole": [
+      { "id": "chicken_leg", "name": "鸡腿", "ratio": 1.2, "note": "家庭小份量更方便，浸煮时间减到 15 分钟" }
+    ],
+    "duck": [
+      { "id": "chicken_whole", "name": "整鸡", "ratio": 1.0, "note": "风味更清淡，炖煮时间减 15 分钟" }
+    ],
+    "egg": [
+      { "name": "鸭蛋", "ratio": 1.0, "note": "蛋香更浓，炒制时略多油" },
+      { "name": "鹌鹑蛋", "ratio": 0.6, "note": "约 5 个抵 1 个鸡蛋，适合卤、煮" }
+    ],
+    "grass_carp": [
+      { "id": "bass", "name": "鲈鱼", "ratio": 1.0, "note": "刺少肉嫩，清蒸红烧都合适" },
+      { "name": "黑鱼", "ratio": 1.0, "note": "肉质紧实，适合水煮、酸菜鱼" }
+    ],
+    "crucian": [
+      { "name": "鲫鱼以外的白鲢", "ratio": 1.0, "note": "熬汤同样奶白，腥味略重需多加姜" },
+      { "id": "bass", "name": "鲈鱼", "note": "刺少，适合给孩子吃" }
+    ],
+    "hairtail": [
+      { "name": "小黄鱼", "ratio": 1.0, "note": "煎制时间缩短 1 分钟" },
+      { "id": "bass", "name": "鲈鱼块", "note": "红烧同样好吃，需拍粉防碎" }
+    ],
+    "shrimp": [
+      { "id": "prawn", "name": "鲜虾去壳", "ratio": 1.2, "note": "口感更弹，需去虾线" },
+      { "name": "冷冻虾仁", "ratio": 1.0, "note": "解冻后挤干水分，腌时加 3g 淀粉" }
+    ],
+    "prawn": [
+      { "id": "shrimp", "name": "虾仁", "ratio": 1.0, "note": "省去剥壳步骤" },
+      { "id": "squid", "name": "鱿鱼圈", "note": "口感接近，炒制时间不超过 1 分钟" }
+    ],
+    "clam": [
+      { "name": "花甲 / 白蛤", "ratio": 1.0, "note": "吐沙时间要够 2 小时" },
+      { "id": "shrimp", "name": "虾仁", "note": "不吃贝类时的替代，鲜味略减" }
+    ],
+    "tofu_firm": [
+      { "id": "tofu_silken", "name": "嫩豆腐", "ratio": 1.0, "note": "不适合煎，只能做汤、蒸" },
+      { "id": "dried_tofu", "name": "豆干", "ratio": 0.7, "note": "口感更紧实，适合炒" },
+      { "name": "老豆腐 + 2g 盐焯水", "note": "去豆腥，煎时更不易碎" }
+    ],
+    "tofu_silken": [
+      { "id": "tofu_firm", "name": "北豆腐", "ratio": 1.0, "note": "做麻婆豆腐需多煮 2 分钟入味" },
+      { "name": "内酯豆腐", "ratio": 1.0, "note": "更嫩滑，凉拌首选" }
+    ],
+    "dried_tofu": [
+      { "id": "tofu_skin", "name": "千张", "ratio": 1.0, "note": "切丝炒更入味" },
+      { "name": "素鸡", "ratio": 1.0, "note": "口感更像肉，适合红烧" }
+    ],
+    "yuba": [
+      { "id": "tofu_skin", "name": "千张", "ratio": 0.8, "note": "不用泡发，直接切丝" },
+      { "name": "豆筋", "ratio": 1.0, "note": "泡发时间同为 2 小时" }
+    ],
+    "wood_ear": [
+      { "name": "银耳", "ratio": 1.0, "note": "口感更软糯，适合凉拌与甜汤" },
+      { "id": "mushroom_shiitake", "name": "香菇片", "note": "风味不同但同样增香" }
+    ],
+    "mushroom_shiitake": [
+      { "id": "king_oyster", "name": "杏鲍菇", "ratio": 1.2, "note": "口感厚实，切片煎更香" },
+      { "id": "enoki", "name": "金针菇", "note": "易熟，最后 2 分钟下锅" }
+    ],
+    "napa": [
+      { "id": "cabbage", "name": "圆白菜", "ratio": 1.0, "note": "更适合炒，炖汤偏硬" },
+      { "id": "bokchoy", "name": "小白菜", "note": "更适合快炒与上汤" }
+    ],
+    "bokchoy": [
+      { "id": "napa", "name": "白菜心", "ratio": 1.0, "note": "口感更甜，炒制时间略长" },
+      { "id": "spinach", "name": "菠菜", "note": "需先焯水去草酸" }
+    ],
+    "cabbage": [
+      { "id": "napa", "name": "白菜", "ratio": 1.0, "note": "水分更多，手撕包菜要沥干" },
+      { "id": "cauliflower", "name": "菜花", "note": "干锅类做法通用" }
+    ],
+    "broccoli": [
+      { "id": "cauliflower", "name": "菜花", "ratio": 1.0, "note": "颜色不同，口感接近，焯水时间加 30 秒" },
+      { "name": "西兰苔 / 芥蓝", "ratio": 1.0, "note": "更脆，焯水 40 秒" }
+    ],
+    "tomato": [
+      { "id": "ketchup", "name": "番茄沙司 + 少量糖", "ratio": 0.25, "note": "应急方案，酸味更直白，需减少糖量" },
+      { "name": "罐装去皮番茄", "ratio": 1.0, "note": "酸度稳定，炖牛腩更出沙" }
+    ],
+    "potato": [
+      { "id": "sweet_potato", "name": "红薯", "ratio": 1.0, "note": "更甜易软，炖煮时间减 5 分钟" },
+      { "id": "yam", "name": "山药", "ratio": 1.0, "note": "口感粉糯，适合炖菜" }
+    ],
+    "eggplant": [
+      { "name": "长茄子 / 圆茄子", "ratio": 1.0, "note": "长茄更嫩，圆茄需多腌 5 分钟" },
+      { "id": "king_oyster", "name": "杏鲍菇", "ratio": 1.0, "note": "素食版鱼香茄子，口感相似" }
+    ],
+    "green_pepper": [
+      { "id": "red_pepper", "name": "红椒", "ratio": 1.0, "note": "颜色更亮，辣度更低" },
+      { "name": "螺丝椒", "ratio": 1.0, "note": "更辣更香，虎皮青椒首选" }
+    ],
+    "chili": [
+      { "id": "dried_chili", "name": "干辣椒", "ratio": 0.4, "note": "香气更浓，辣度更高" },
+      { "id": "chili_powder", "name": "辣椒粉", "ratio": 0.2, "note": "适合调汁，不适合爆香" }
+    ],
+    "scallion": [
+      { "id": "garlic_sprout", "name": "蒜苗", "ratio": 1.0, "note": "香味更冲，适合炒菜收尾" },
+      { "id": "onion", "name": "洋葱丝", "ratio": 1.0, "note": "爆香效果接近" }
+    ],
+    "ginger": [
+      { "name": "沙姜", "ratio": 0.8, "note": "香味独特，适合白切鸡蘸碟" },
+      { "name": "姜粉", "ratio": 0.2, "note": "仅用于腌肉，爆香效果差" }
+    ],
+    "garlic": [
+      { "name": "蒜苗白", "ratio": 1.0, "note": "香味柔和" },
+      { "name": "独头蒜", "ratio": 0.8, "note": "蒜味更浓" }
+    ],
+    "celery": [
+      { "name": "西芹", "ratio": 1.0, "note": "更粗，需切薄片" },
+      { "id": "garlic_sprout", "name": "蒜苗", "note": "增香，不适合凉拌" }
+    ],
+    "cilantro": [
+      { "name": "葱花", "ratio": 1.0, "note": "不吃香菜时最通用的替代" },
+      { "name": "芹菜叶", "ratio": 0.8, "note": "气味相近，需切碎" }
+    ],
+    "chive": [
+      { "name": "韭黄", "ratio": 1.0, "note": "更嫩更甜，炒制时间减 5 秒" },
+      { "id": "garlic_sprout", "name": "蒜苗", "note": "适合炒蛋，风味不同" }
+    ],
+    "lotus_root": [
+      { "id": "potato", "name": "土豆片", "ratio": 1.0, "note": "清炒口感接近，需泡水去淀粉" },
+      { "name": "藕带", "note": "更嫩，只适合快炒" }
+    ],
+    "winter_melon": [
+      { "name": "节瓜", "ratio": 1.0, "note": "口感几乎一致" },
+      { "id": "pumpkin", "name": "南瓜", "note": "汤会变甜，适合清炖" }
+    ],
+    "loofah": [
+      { "name": "丝瓜以外的水瓜", "ratio": 1.0, "note": "同样易出汤" },
+      { "id": "winter_melon", "name": "冬瓜", "note": "口感更硬，需多煮 3 分钟" }
+    ],
+    "rice": [
+      { "name": "东北大米", "ratio": 1.0, "note": "更黏，水量减 10%" },
+      { "id": "millet", "name": "小米（掺 30%）", "note": "更清香，煮粥更易开花" }
+    ],
+    "noodle_wheat": [
+      { "id": "rice_noodle", "name": "米粉", "ratio": 1.0, "note": "无麸质，煮制时间短" },
+      { "name": "荞麦面", "ratio": 1.0, "note": "升糖更低，口感偏硬" }
+    ],
+    "flour": [
+      { "name": "低筋面粉 + 高筋面粉 1:1", "note": "替代中筋面粉，做饼更松软" },
+      { "id": "oats", "name": "燕麦粉", "ratio": 1.0, "note": "需多加 10% 水，口感粗" }
+    ],
+    "dumpling_wrapper": [
+      { "name": "自制面团", "ratio": 1.0, "note": "面粉 150g + 水 80ml，醒 30 分钟" },
+      { "id": "wonton_wrapper", "name": "馄饨皮", "ratio": 1.2, "note": "皮薄，煮制时间减半" }
+    ],
+    "bread": [
+      { "name": "馒头片", "ratio": 1.0, "note": "煎烤后口感接近" },
+      { "id": "flour", "name": "面粉自制饼", "note": "需现做，适合早餐" }
+    ],
+    "oats": [
+      { "name": "即食麦片 / 燕麦麸", "ratio": 1.0, "note": "煮制时间减到 1 分钟" },
+      { "id": "millet", "name": "小米", "note": "需先煮 20 分钟" }
+    ],
+    "milk": [
+      { "name": "无糖豆浆", "ratio": 1.0, "note": "植物基方案，蛋白质略低" },
+      { "name": "奶粉 + 水", "ratio": 0.12, "note": "按 1:8 冲调" }
+    ],
+    "butter": [
+      { "id": "oil", "name": "食用油", "ratio": 0.8, "note": "少了奶香，适合煎制" },
+      { "name": "椰子油", "ratio": 1.0, "note": "有椰香，适合甜点" }
+    ],
+    "peanut": [
+      { "id": "walnut", "name": "核桃仁", "ratio": 1.0, "note": "花生过敏替代，需掰小粒" },
+      { "name": "腰果", "ratio": 1.0, "note": "炸后更酥，成本更高" }
+    ],
+    "sesame": [
+      { "name": "黑芝麻", "ratio": 1.0, "note": "颜色不同，香味更浓" },
+      { "name": "熟芝麻碎", "ratio": 1.0, "note": "撒面装饰效果更好" }
+    ],
+    "red_date": [
+      { "name": "蜜枣", "ratio": 0.8, "note": "更甜，糖要减量" },
+      { "id": "goji", "name": "枸杞", "note": "用量减半，仅点缀" }
+    ],
+    "sweet_potato": [
+      { "id": "potato", "name": "土豆", "ratio": 1.0, "note": "不甜，需额外调味" },
+      { "id": "pumpkin", "name": "南瓜", "ratio": 1.0, "note": "更水润，蒸制时间减 3 分钟" }
+    ],
+    "yam": [
+      { "id": "potato", "name": "土豆", "ratio": 1.0, "note": "口感偏面，适合炖" },
+      { "name": "芋头", "ratio": 1.0, "note": "更粉糯，蒸制时间加 5 分钟" }
+    ],
+    "bamboo_shoot": [
+      { "id": "king_oyster", "name": "杏鲍菇丝", "ratio": 1.0, "note": "酸辣汤里口感接近" },
+      { "name": "茭白", "ratio": 1.0, "note": "更嫩，焯水 30 秒" }
+    ],
+    "okra": [
+      { "name": "秋葵以外的豆角类", "note": "口感差异大，不建议互换" },
+      { "id": "green_bean", "name": "四季豆", "note": "只能做干煸类" }
+    ],
+    "lettuce": [
+      { "id": "bokchoy", "name": "小白菜", "ratio": 1.0, "note": "焯水时间加 10 秒" },
+      { "name": "油麦菜", "ratio": 1.0, "note": "更适合蒜蓉清炒" }
+    ],
+    "spinach": [
+      { "id": "bokchoy", "name": "小白菜", "ratio": 1.0, "note": "草酸更低，可直接炒" },
+      { "name": "苋菜", "ratio": 1.0, "note": "出红汤，适合蒜炒" }
+    ],
+    "vinegar": [
+      { "id": "white_vinegar", "name": "白醋", "ratio": 0.8, "note": "没有陈香，酸味更冲" },
+      { "name": "陈醋 + 少许糖", "ratio": 1.0, "note": "更接近香醋的圆润感" }
+    ],
+    "light_soy": [
+      { "id": "steamed_fish_soy", "name": "蒸鱼豉油", "ratio": 1.0, "note": "更鲜，盐度略低" },
+      { "id": "dark_soy", "name": "老抽 + 水 1:1", "ratio": 1.0, "note": "颜色偏深，需减量使用" }
+    ],
+    "oyster_sauce": [
+      { "id": "light_soy", "name": "生抽 + 糖", "ratio": 1.0, "note": "每 15g 生抽加 3g 糖，鲜味接近" },
+      { "id": "soybean_paste", "name": "黄豆酱", "ratio": 0.8, "note": "更咸，需减盐" }
+    ],
+    "doubanjiang": [
+      { "id": "chopped_chili", "name": "剁椒", "ratio": 1.0, "note": "辣度接近，缺酱香" },
+      { "id": "hotpot_base", "name": "火锅底料", "ratio": 0.6, "note": "香味更复合，用量要少" }
+    ],
+    "starch": [
+      { "id": "flour", "name": "面粉", "ratio": 1.0, "note": "勾芡易浑，需减量 20%" },
+      { "name": "红薯淀粉", "ratio": 1.0, "note": "更透亮，适合挂糊" }
+    ],
+    "cooking_wine": [
+      { "name": "黄酒 / 花雕", "ratio": 1.0, "note": "香气更足，用量减 1/3" },
+      { "name": "料酒 + 姜汁", "ratio": 1.0, "note": "去腥效果接近" }
+    ],
+    "sichuan_pepper": [
+      { "name": "麻椒", "ratio": 1.0, "note": "麻味更冲，需减量" },
+      { "name": "花椒油", "ratio": 0.4, "note": "出锅前淋，不能爆炒" }
+    ],
+    "chicken_essence": [
+      { "name": "鸡粉", "ratio": 1.0, "note": "咸度更高" },
+      { "name": "干香菇粉", "ratio": 1.0, "note": "天然鲜味，适合清淡菜" }
+    ]
+  },
+  "byCategory": {
+    "meat": [
+      { "id": "chicken_breast", "name": "鸡胸肉", "note": "低脂通用替代，烹饪时间缩短 1/3" },
+      { "id": "tofu_firm", "name": "北豆腐", "note": "素食方案，需额外加 10ml 油与酱汁补味" }
+    ],
+    "poultry": [
+      { "id": "chicken_breast", "name": "鸡胸肉", "note": "最通用的禽类替代" }
+    ],
+    "seafood": [
+      { "id": "shrimp", "name": "虾仁", "note": "多数鱼类菜可换成虾仁，烹饪时间大幅缩短" },
+      { "id": "dried_shrimp", "name": "虾皮", "note": "仅适合提鲜，不能替代主料" }
+    ],
+    "veg": [
+      { "id": "cabbage", "name": "圆白菜", "note": "耐炒耐炖的万能蔬菜" },
+      { "id": "carrot", "name": "胡萝卜", "note": "配色与甜味补充" }
+    ],
+    "mushroom": [
+      { "id": "king_oyster", "name": "杏鲍菇", "note": "口感最接近肉类，适合煎炒" }
+    ],
+    "staple": [
+      { "id": "rice", "name": "大米", "note": "主食互换，注意水量与时间差异" }
+    ],
+    "egg": [
+      { "id": "tofu_silken", "name": "嫩豆腐", "note": "素食替代，需加 1g 姜黄粉上色" }
+    ],
+    "dairy": [
+      { "id": "milk", "name": "牛奶", "note": "奶类互换，注意脂肪含量差异" }
+    ],
+    "nut": [
+      { "id": "peanut", "name": "花生米", "note": "坚果互换，注意过敏原" }
+    ],
+    "soy": [
+      { "id": "tofu_firm", "name": "北豆腐", "note": "豆制品互换，按含水率调整用量" }
+    ],
+    "fruit": [
+      { "id": "apple", "name": "苹果", "note": "水果互换，甜度不同需调糖量" }
+    ],
+    "dry": [
+      { "id": "red_date", "name": "红枣", "note": "干货互换，泡发时间相近" }
+    ]
+  }
+}
